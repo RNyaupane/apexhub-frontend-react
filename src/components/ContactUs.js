@@ -33,12 +33,12 @@ const ContactUs = () => {
 
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7252.299211901372!2d85.33745960734657!3d27.69921488250622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199940d81663%3A0xaf36b9b58903050f!2sApex%20College!5e0!3m2!1sen!2snp!4v1685294788279!5m2!1sen!2snp"
-                                    style={{border:'0', width: '100%', height: '290px'}}></iframe>
+                                    style={{border:'0', width: '100%', height: '290px'}} title='Map'></iframe>
                             </div>
                         </div>
 
                         <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch m-0 p-0">
-                            <form action="" method="post" role="form" className="w-100 p-4 bg-white  contact-form">
+                            <form action="" method="post" role="form" className="w-100 p-4 bg-white  contact-form" >
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="name">Name</label>
                                     <input type="text" className="form-control " name="name" id="name" required />

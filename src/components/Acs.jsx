@@ -5,10 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // import '../styles/style.css';
 import '../main.js';
 
-import spaceXLogo from '../assets/images/spacex.webp'
-import microsoftLogo from '../assets/images/Microsoft logo.png'
-import appleLogo from '../assets/images/apple-logo.png'
-import { data } from '../assets/images/Data.js';
+import { jobData } from '../assets/images/Data.js';
 const Acs = () => {
     
     return (
@@ -19,8 +16,8 @@ const Acs = () => {
                         <div className="row">
                             <div className="col-12 mt-4 end-0 ">
 
-                                <div className="tab-content border bg-white" >
-                                    <Link to='/jobPostForm' className="btn btn-success py-2 my-3 px-4 fw-bold rounded-0 rounded-end">Post a Job</Link>
+                                <div className="tab-content bg-transparent" >
+                                    <Link to='/jobPostForm' className="btn btn-success py-2 my-3 px-5 fw-bold rounded-0 rounded-end"><i class="bi bi-sticky-fill"></i> Post a Job</Link>
                                     <div className=" my-2 d-none">
                                         <button className="btn btn-gray border dropdown-toggle rounded-0 bg-white" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                             Select Category
@@ -33,7 +30,7 @@ const Acs = () => {
                                             <li><button className="dropdown-item" type="button">Onsite</button></li>
                                         </ul>
                                     </div>
-                                    <div className="filter mt-4" style={{ float: 'right' }}>
+                                    <div className="filter mt-4 " style={{ float: 'right' }}>
                                         <Link className="icon fs-4 text-secondary" to="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></Link>
                                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                             <li className="dropdown-header text-start">
@@ -48,7 +45,7 @@ const Acs = () => {
                                         </ul>
                                     </div>
                                     <div id="tab-1 " className="tab-pane fade show p-0 active">
-                                        {data.map((props) => (
+                                        {jobData.map((props) => (
                                             <div className="job-item py-3 px-2  shadow-none border-top border-bottom">
                                             <div className="row g-4">
                                                 <div className="col-sm-12 col-md-8 d-flex align-items-center">
@@ -65,7 +62,7 @@ const Acs = () => {
                                                     <div className="d-flex mb-3">
                                                         <button className="btn btn-light btn-square me-3 d-flex border border-3" to="">Upvote <i
                                                             className="bi bi-caret-up-fill"></i></button>
-                                                        <Link className="btn btn-success d-flex px-4" to="/jobDetail">Apply</Link>
+                                                        <Link className="btn btn-success d-flex px-4 border border-1" to="/jobDetail">Apply</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,48 +75,48 @@ const Acs = () => {
                     </div>
 
                     <div className="col-lg-3 mt-4 float-end d-none d-lg-block">
-                        <div className="card shadow-none px3" id="ads-card">
+                        <div className="card shadow-none px3 rounded-0" id="ads-card">
                             <div className="shadow-none pb-0">
-                                <article class="card-group-item ">
-                                    <header class="card-header bg-light">
-                                        <h6 class="title">Range input </h6>
+                                <article className="card-group-item ">
+                                    <header className="card-header bg-light">
+                                        <h6 className="title">Price Range   </h6>
                                     </header>
-                                    <div class="filter-content">
-                                        <div class="card-body shadow-none">
-                                            <div class="form-row d-flex">
-                                                <div class="form-group col-md-5">
+                                    <div className="filter-content">
+                                        <div className="card-body shadow-none">
+                                            <div className="form-row d-flex">
+                                                <div className="form-group col-md-5">
                                                     <label>Min</label>
-                                                    <input type="number" class="form-control shadow-none" id="inputEmail4" placeholder="$0" />
+                                                    <input type="number" className="form-control shadow-none" id="inputEmail4" placeholder="$0" />
                                                 </div>
-                                                <div class="form-group col-md-5 mx-2 text-right">
+                                                <div className="form-group col-md-5 mx-2 text-right">
                                                     <label>Max</label>
-                                                    <input type="number" class="form-control shadow-none" placeholder="$1,0000" />
+                                                    <input type="number" className="form-control shadow-none" placeholder="$1,0000" />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
-                                <article class="card-group-item mt-3">
-                                    <header class="card-header">
-                                        <h6 class="title">Selection </h6>
+                                <article className="card-group-item mt-3">
+                                    <header className="card-header">
+                                        <h6 className="title">Select Job Type </h6>
                                     </header>
-                                    <div class="filter-content mx-2 px-3">
-                                        <div class="card-body shadow-none d-inline px-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input shadow-none border border-secondary fs-4" type="checkbox" value="" id=""/>
-                                                    <label class="form-check-label m-1" for="flexCheckDefault">
+                                    <div className="filter-content mx-2 px-3">
+                                        <div className="card-body shadow-none d-inline px-5">
+                                            <div className="form-check">
+                                                <input className="form-check-input shadow-none border border-secondary fs-4" type="checkbox" value="" id=""/>
+                                                    <label className="form-check-label m-1" for="flexCheckDefault">
                                                         Hybrid
                                                     </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
-                                                    <label class="form-check-label m-1" for="flexCheckDefault">
+                                            <div className="form-check">
+                                                <input className="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
+                                                    <label className="form-check-label m-1" for="flexCheckDefault">
                                                         Onsite
                                                     </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
-                                                    <label class="form-check-label m-1" for="flexCheckDefault">
+                                            <div className="form-check">
+                                                <input className="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
+                                                    <label className="form-check-label m-1" for="flexCheckDefault">
                                                         Remote
                                                     </label>
                                             </div>
@@ -127,7 +124,7 @@ const Acs = () => {
                                     </div>
                                 </article>
                                 <div className='text-center'>
-                                <a className="btn btn-light btn-outline-dark mb-3 text-center">Apply Changes</a>
+                                <a className="btn btn-light border border-3 mb-3 rounded-0">Apply Changes</a>
                                 </div>      
                             </div>
                         </div>

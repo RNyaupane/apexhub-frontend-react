@@ -36,27 +36,27 @@ const Nav = () => {
 
                 <div className="search-bar d-none d-sm-block d-md-block d-lg-block">
                     <form className="search-form d-flex align-items-center" method="POST" action="#">
-                        <input type="text" name="query" placeholder="Search here..." title="Enter search keyword" />
+                        <input className='rounded-pill px-3' type="text" name="query" placeholder="Search here..." title="Enter search keyword" />
                         <button type="submit" title="Search">
-                            <i className="bi bi-search"></i>
+                            <i className="bi bi-search text-dark"></i>
                         </button>
                     </form>
                 </div>
                 <nav className="header-nav ms-auto">
                     <ul className="d-flex align-items-center">
                         {/* <li className='nav-item'>
-                            <button type="button" class="btn btn-primary">Left</button>
+                            <button type="button" className="btn btn-primary">Left</button>
                         </li> */}
                         <li className="nav-item d-block d-xl-none d-sm-none d-lg-none d-md-none">
-                            <a className="nav-link nav-icon search-bar-toggle" to="#">
+                            <a className="nav-link nav-icon search-bar-toggle" >
                                 {/* <i className="bi bi-search"></i> */}
                                 <button className="bi bi-search bg-white border border-white" onClick={handleToggleSearchBar}></button>
                             </a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link nav-icon" to="#" data-bs-toggle="dropdown">
+                            <a className="nav-link nav-icon" data-bs-toggle="dropdown">
                                 <i className="bi bi-bell"></i>
-                                <span className="badge bg-dark badge-number">2</span> </a>
+                                <span className="badge bg-danger rounded-circle badge-number">2</span> </a>
                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
                                 <li className="dropdown-header">
                                     You have 2 new notifications
@@ -93,7 +93,7 @@ const Nav = () => {
                             </ul>
                         </li>
                         <li className="nav-item dropdown pe-3">
-                            <a className="nav-link nav-profile d-flex align-items-center pe-0" to="#" data-bs-toggle="dropdown">
+                            <a className="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown">
                                 <img src={profileImage} alt="Profile" className="rounded-circle" />
                                 <span className="d-none d-md-block dropdown-toggle ps-2">Roshan Nyaupane</span>
                             </a>

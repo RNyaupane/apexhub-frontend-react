@@ -26,8 +26,8 @@ const StudentProfile = () => {
                   <div className="d-inline p-0 m-0 fw-bold">03/05/2001</div>
                 </div>
                 <div className="d-grid gap-2 d-md-block my-4">
-                  <button className="btn btn-success mx-2" type="button ">Update Photo</button>
-                  <button className="btn btn-light border border-dark " type="button">Remove Photo</button>
+                  <button className="btn btn-success border border-2 mx-2" type="button ">Update Photo</button>
+                  {/* <button className="btn btn-light border border-dark " type="button">Remove Photo</button> */}
                 </div>
               </div>
             </div>
@@ -258,16 +258,16 @@ const StudentProfile = () => {
                 </form>
               </Tab>
               <Tab eventKey="yourPosts" title="Your Posts">
-                <div class="container mt-4">
-                  <div class="row">
-                    <div class="col">
-                      <button type="button" class="btn btn-light border rounded-pill w-50">All</button>
+                <div className="container mt-4">
+                  <div className="row">
+                    <div className="col">
+                      <button type="button" className="btn btn-light border rounded-pill w-50">All</button>
                     </div>
-                    <div class="col">
-                      <button type="button" class="btn btn-light border rounded-pill w-50">Sold</button>
+                    <div className="col">
+                      <button type="button" className="btn btn-light border rounded-pill w-50">Sold</button>
                     </div>
-                    <div class="col">
-                      <button type="button" class="btn btn-light border rounded-pill w-50">Hold</button>
+                    <div className="col">
+                      <button type="button" className="btn btn-light border rounded-pill w-50">Hold</button>
                     </div>
                   </div>
                 </div>

@@ -76,7 +76,7 @@ const AboutUS = () => {
               <div className="icon d-flex mb-3 justify-content-center">
                 <i className="bi bi-pin-map-fill py-1 text-white fs-1"></i>
               </div>
-              <h4><a className='text-decoration-none' href="">Exclusive Student Placements</a></h4>
+              <h4><a className='text-decoration-none'>Exclusive Student Placements</a></h4>
               <p className="text-center">
                 In addition to external job postings, ApexHub's ACS department
                 occasionally shares exclusive job openings specifically
@@ -93,7 +93,7 @@ const AboutUS = () => {
               <div className="icon d-flex mb-3 justify-content-center">
                 <i className="bi bi-credit-card-2-back-fill py-1 text-white fs-1"></i>
               </div>
-              <h4><a className='text-decoration-none' href="">Seamless Consumer-to-Consumer Payments</a></h4>
+              <h4><a className='text-decoration-none'>Seamless Consumer-to-Consumer Payments</a></h4>
               <p className="text-center">
                 ApexHub ensures secure and seamless payment transactions
                 between buyers and sellers. This service provides peace of
@@ -110,7 +110,7 @@ const AboutUS = () => {
                 <i className="bi bi-briefcase-fill py-1 text-white fs-1"></i>
               </div>
               <h4>
-                <a className='text-decoration-none' href="">Verified Job <br />
+                <a className='text-decoration-none'>Verified Job <br />
                   Opportunities</a>
               </h4>
               <p className="text-center">
@@ -129,7 +129,7 @@ const AboutUS = () => {
               <div className="icon d-flex mb-3 justify-content-center">
                 <i className="bi bi-app-indicator py-1 text-white fs-1"></i>
               </div>
-              <h4><a className='text-decoration-none' href="">Customized Job Alerts</a></h4>
+              <h4><a className='text-decoration-none'>Customized Job Alerts</a></h4>
               <p className="text-center">
                 ApexHub offers a customized job alert system that notifies job
                 seekers about relevant job openings based on their
@@ -146,7 +146,7 @@ const AboutUS = () => {
               <div className="icon d-flex mb-3 justify-content-center">
                 <i className="bi bi-person-fill-up py-1 text-white fs-1"></i>
               </div>
-              <h4><a className='text-decoration-none' href="">Job Seeker Profile Boosting</a></h4>
+              <h4><a className='text-decoration-none'>Job Seeker Profile Boosting</a></h4>
               <p className="text-center">
                 ApexHub offers a feature that allows job seekers to boost
                 their profiles, increasing visibility and attracting the
@@ -163,7 +163,7 @@ const AboutUS = () => {
               <div className="icon d-flex mb-3 justify-content-center">
                 <i className="bi bi-file-earmark-lock py-1 text-white fs-1"></i>
               </div>
-              <h4><a className='text-decoration-none' href="">Secure Product Storage</a></h4>
+              <h4><a className='text-decoration-none'>Secure Product Storage</a></h4>
               <p>
                 ApexHub's unique storage feature allows individuals to
                 securely store their products. This service eliminates the

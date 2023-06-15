@@ -19,13 +19,13 @@ const Notification = () => {
                             <h3 className=" m-0 mb-3 d-flex w-100 ">Notifications
                             </h3>
                             <div className="filter float-end">
-                                    <a className="icon fs-4 text-secondary" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
+                                    <a className="icon fs-4 text-secondary" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
                                     <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                         <li>
-                                            <a className="dropdown-item" href="#">Mark as all read</a>
+                                            <a className="dropdown-item">Mark as all read</a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="#">Delete all notifications</a>
+                                            <a className="dropdown-item">Delete all notifications</a>
                                         </li>
                                     </ul>
                                 </div>

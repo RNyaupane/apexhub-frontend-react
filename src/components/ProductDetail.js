@@ -29,15 +29,15 @@ const ProductDetail = () => {
                                         </div>
                                         <div className="container p-2 lead">
                                             <div className="col-md-4 p-3 border-bottom float-end ">
-                                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <div class="ratings d-flex">
-                                                        <i class="bi bi-star-fill rating-color fs-4"></i>
-                                                        <i class="bi bi-star-fill rating-color fs-4"></i>
-                                                        <i class="bi bi-star-fill rating-color fs-4"></i>
-                                                        <i class="bi bi-star-fill rating-color fs-4"></i>
-                                                        <i class="bi bi-star rating-color fs-4"></i>
+                                                <div className="d-flex justify-content-between align-items-center mb-2">
+                                                    <div className="ratings d-flex">
+                                                        <i className="bi bi-star-fill rating-color fs-4"></i>
+                                                        <i className="bi bi-star-fill rating-color fs-4"></i>
+                                                        <i className="bi bi-star-fill rating-color fs-4"></i>
+                                                        <i className="bi bi-star-fill rating-color fs-4"></i>
+                                                        <i className="bi bi-star rating-color fs-4"></i>
                                                     </div>
-                                                    <a class="review-count text-decoration-none fs-6 fw-bold text-secondary">(12&nbsp;Reviews)</a>
+                                                    <a className="review-count text-decoration-none fs-6 fw-bold text-secondary">(12&nbsp;Reviews)</a>
                                                 </div>
                                                 {/* <div> */}
                                                 <img src={bookPhoto} alt="GOG" className="img-fluid rounded float-end img-thumbnail " />
@@ -84,22 +84,22 @@ const ProductDetail = () => {
                                             <button type="button" className="btn btn-success">
                                                 Buy Now
                                             </button>
-                                            <button type="button" class="btn btn-outline-dark mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <button type="button" className="btn btn-outline-dark mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 Rate this Product
                                             </button>
                                         </div>
 
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Rate the product</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div className="modal-dialog">
+                                                <div className="modal-content">
+                                                    <div className="modal-header">
+                                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Rate the product</h1>
+                                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        <div class="rate bg-light border py-3 text-white mt-3">
-                                                            <h6 class="mb-0 text-dark text-center">Select Star</h6>
-                                                            <div class="rating">
+                                                    <div className="modal-body">
+                                                        <div className="rate bg-light border py-3 text-white mt-3">
+                                                            <h6 className="mb-0 text-dark text-center">Select Star</h6>
+                                                            <div className="rating">
                                                                 <input type="radio" name="rating" value="5" id="5" />
                                                                 <label for="5">☆</label>
                                                                 <input type="radio" name="rating" value="4" id="4" />
@@ -111,13 +111,13 @@ const ProductDetail = () => {
                                                                 <input type="radio" name="rating" value="1" id="1" />
                                                                 <label for="1">☆</label>
                                                             </div>
-                                                            <div class="buttons px-4 mt-0">
-                                                                <button class="btn btn-warning btn-block rating-submit fs-5" data-bs-dismiss="modal">Submit</button>
+                                                            <div className="buttons px-4 mt-0">
+                                                                <button className="btn btn-warning btn-block rating-submit fs-5" data-bs-dismiss="modal">Submit</button>
                                                             </div>
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            {/* <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save changes</button> */}
+                                                        <div className="modal-footer">
+                                                            {/* <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" className="btn btn-primary">Save changes</button> */}
                                                         </div>
                                                     </div>
                                                 </div>

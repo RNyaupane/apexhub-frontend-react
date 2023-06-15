@@ -1,7 +1,10 @@
 import spaceXLogo from './spacex.webp'
 import microsofLtogo from './Microsoft logo.png'
 import appleLogo from './apple-logo.png'
-export const data = [
+
+import bookPhoto from './book3.jpg'
+
+export const jobData = [
     {
         id : 1,
         imageurl:spaceXLogo,
@@ -43,5 +46,92 @@ export const data = [
         companyname:"BajajMotors",
         jobtitle:"React Developoer",
         location:"Kathmandu, Nepal (Remote)",
+    },
+];
+
+export const bookData = [
+    {
+        id : 1,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Advance JAVA",
+        price:"$500",
+    },
+    {
+        id : 2,
+        bookcategory:"Book",
+        bookimageurl:bookPhoto,
+        bookname:"C programming by roshan nyaupane",
+        price:"$400",
+    },
+    {
+        id : 3,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Finance",
+        price:"$100",
+    },
+    {
+        id : 4,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Sociology",
+        price:"$300",
+    },
+    {
+        id : 5,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Marketing",
+        price:"$1000",
+    },
+    {
+        id : 6,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"DSA",
+        price:"$5000",
+    },
+    {
+        id : 7,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Advance JAVA",
+        price:"$500",
+    },
+    {
+        id : 8,
+        bookcategory:"Book",
+        bookimageurl:bookPhoto,
+        bookname:"C programming by roshan nyaupane",
+        price:"$400",
+    },
+    {
+        id : 9,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Finance",
+        price:"$100",
+    },
+    {
+        id : 10,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Sociology",
+        price:"$300",
+    },
+    {
+        id : 11,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"Marketing",
+        price:"$1000",
+    },
+    {
+        id : 12,
+        bookcategory:"Notes",
+        bookimageurl:bookPhoto,
+        bookname:"DSA",
+        price:"$5000",
     },
 ];

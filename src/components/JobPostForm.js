@@ -2,8 +2,6 @@ import React from 'react';
 // import ReactQuill from 'react-quill';
 // import 'react-quill/dist/quill.snow.css';
 
-const value1 = "Enter Qualification and Skill  <br/><br/><br/><br/><br/><br/>";
-const value2 = " Enter Job Responsibility <br/><br/><br/><br/><br/><br/>";
 const JobPostForm = () => {
 
   return (
