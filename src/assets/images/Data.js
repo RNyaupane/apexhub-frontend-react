@@ -40,8 +40,8 @@ export const data = [
     {
         id : 6,
         imageurl:"",
-        companyname:"F1Soft",
-        jobtitle:"Full stack Dotnet developer",
+        companyname:"BajajMotors",
+        jobtitle:"React Developoer",
         location:"Kathmandu, Nepal (Remote)",
     },
 ];
