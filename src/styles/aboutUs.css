@@ -1,0 +1,115 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --background: #f6f9ff;
+    --button-primary: #008CBA;
+    --button-success: #4CAF50;
+    --button-danger: #f44336;
+    --button-gray: #e7e7e7;
+    --link-color: #008CBA;
+    --logo-color: #012970;
+    --box-shadow: rgba(1, 41, 112, 0.1);
+  }
+
+.about {
+    padding: 30px;
+  }
+  
+  .about .icon-box {
+    padding-left: 15px;
+  }
+  
+  .about .icon-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+  }
+  
+  .about .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #ffc451;
+  }
+  
+  .about .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 60px;
+  }
+  
+  .about .image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+
+  /* Services */
+  .services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #009b22;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  .services .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+
+  #aboutUs,
+  #aboutUs1,
+  #aboutUs2{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  /* #aboutUs {
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 30px;}
+  } */

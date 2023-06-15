@@ -1,0 +1,80 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --background: #f6f9ff;
+    --button-primary: #008CBA;
+    --button-success: #4CAF50;
+    --button-danger: #f44336;
+    --button-gray: #e7e7e7;
+    --link-color: #008CBA;
+    --logo-color: #012970;
+    --box-shadow: rgba(1, 41, 112, 0.1);
+  }
+  
+  /*--------------------------------------------------------------
+  # Profie Page
+  --------------------------------------------------------------*/
+  .profile .profile-card img {
+      max-width: 120px;
+    }
+    
+    .profile .profile-card h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2c384e;
+      margin: 10px 0 0 0;
+    }
+    
+    .profile .profile-card h3 {
+      font-size: 18px;
+    }
+    
+    .profile .profile-card .social-links a {
+      font-size: 20px;
+      display: inline-block;
+      color: rgba(1, 41, 112, 0.5);
+      line-height: 0;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+    
+    .profile .profile-card .social-links a:hover {
+      color: #012970;
+    }
+    
+    .profile .profile-overview .row {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+    
+    .profile .profile-overview .card-title {
+      color: rgb(1, 42, 112);
+      font-size: 2rem;
+    }
+    
+    .profile .profile-overview .label {
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+    }
+    
+    .profile .profile-edit label {
+      font-weight: 600;
+      color: rgba(1, 41, 112, 0.6);
+    }
+    
+    .profile .profile-edit img {
+      max-width: 120px;
+    }
+    .card-body{
+      box-shadow: 0px 1px 5px rgba(1, 42, 112, 0.225);
+    }
+    .nav-link{
+      color: #01701b;
+    }
+    .nav-item button:hover{
+      color: #04b92e;
+    }
+   a{
+    cursor: pointer;
+   }
+   

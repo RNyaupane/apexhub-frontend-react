@@ -1,0 +1,20 @@
+body {
+    height: 100vh;
+    background-color: #f6f9ff;
+  }
+  .wrapper{
+    /* border: 1px solid black; */
+    border-top: 3px solid dodgerblue;
+  }
+  .wrapper a{
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  
+  /* register form radiobutton cursor*/
+  .form-check-input[type="radio"]{
+    cursor: pointer;
+  }
+  
+  
+  

@@ -1,0 +1,40 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --background: #f6f9ff;
+    --button-primary: #008CBA;
+    --button-success: #4CAF50;
+    --button-danger: #f44336;
+    --button-gray: #e7e7e7;
+    --link-color: #008CBA;
+    --logo-color: #012970;
+    --box-shadow: rgba(1, 41, 112, 0.1);
+  }
+  .contact .info i {
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  } 
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-weight: 600;
+  }
+  
+  .contact .info p {
+    padding: 0 0 10px 60px;
+    cursor: pointer;
+  }
+  .contact .info p:hover{
+   color: #036593;
+   text-decoration: underline;
+  }  
+  .contact .contact-form input {
+    height: 44px;
+  }
+
+  
