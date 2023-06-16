@@ -36,7 +36,7 @@ const StudentProfile = () => {
           <div className="col-xl-8 border border-1 rounded-1 sm p-3">
 
             <Tabs>
-              <Tab eventKey="home" title="Home">
+              <Tab eventKey="home" title="Profile">
                 <div className="tab-pane fade show active profile-overview" id="profile-overview">
                   <h5 className="card-title">About</h5>
                   <p className="">I am an excellent communicator. I take pride in myself on making sure people have the right information because it drives better results.
@@ -275,7 +275,7 @@ const StudentProfile = () => {
                   <div className="row m-0 p-0">
                     <div className="col-lg-14 ">
                       <div className="row ">
-                        <div className=" col-lg-12 card dark m-1 rounded-0 productCard border">
+                        <div className=" col-lg-12 card dark m-1 rounded-0 productCard border flex-row">
                           <img src={bookPhoto} className="card-img-top border border-1 rounded-0 imagess"
                             alt="..." />
                           <div className="card-body shadow-none ">
@@ -290,23 +290,6 @@ const StudentProfile = () => {
                             </div>
                           </div>
                         </div>
-
-                        <div className="card dark m-1 col-lg-12  productCard border">
-                          <img src={bookPhoto} className="card-img-top border border-1 rounded-0 imagess"
-                            alt="..." />
-                          <div className="card-body shadow-none">
-                            <div className="text-section">
-                              <h3 className="mt-3 product-category">Solution</h3>
-                              <p className="card-text fs-6"><span className="fs-5">Name: &nbsp;</span>Guardians of the Galaxy</p>
-                              <p className="card-text position-absolute bottom-0 posted-time pb-3">(18 min ago)</p>
-                            </div>
-                            <div className="cta-section">
-                              <div className="text-success fw-bold pt-2">$500.00</div>
-                              <Link to="ProductDetail.html" className="btn btn-success my-2 border-none">View</Link>
-                            </div>
-                          </div>
-                        </div>
-                        
                       </div>
                     </div>
                   </div>

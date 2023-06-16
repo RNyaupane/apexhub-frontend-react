@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// import '../styles/style.css';
+
 import '../main.js';
 
 import { jobData } from '../assets/images/Data.js';
 const Acs = () => {
-    
+
     return (
         <main id="main" className="main">
             <section className="section dashboard">
@@ -47,26 +45,26 @@ const Acs = () => {
                                     <div id="tab-1 " className="tab-pane fade show p-0 active">
                                         {jobData.map((props) => (
                                             <div className="job-item py-3 px-2  shadow-none border-top border-bottom">
-                                            <div className="row g-4">
-                                                <div className="col-sm-12 col-md-8 d-flex align-items-center">
-                                                    <img className="flex-shrink-0 img-fluid border rounded" src={props.imageurl} alt=""
-                                                        style={{ width: "60px", height: "60px" }} />
-                                                    <div className="text-start ps-4">
+                                                <div className="row g-4">
+                                                    <div className="col-sm-12 col-md-8 d-flex align-items-center">
+                                                        <img className="flex-shrink-0 img-fluid border rounded" src={props.imageurl} alt=""
+                                                            style={{ width: "60px", height: "60px" }} />
+                                                        <Link to="/jobDetail" className="text-start ps-4 text-decoration-none">
                                                             <h5 className="mb-1 fs-3 fw-bold" style={{ color: "rgb(53, 43, 43)" }}><u>{props.companyname}</u></h5>
-                                                            <span className="text-truncate me-3 fs-5 d-block">{props.jobtitle}</span>
-                                                            <span className="text-truncate me-3 d-block"> {props.location}<span></span> </span>
+                                                            <span className="text-truncate me-3 text-dark fs-5 d-block">{props.jobtitle}</span>
+                                                            <span className="text-truncate me-3 text-dark d-block"> {props.location}<span></span> </span>
+                                                        </Link>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                                    <div className="d-flex mb-3">
-                                                        <button className="btn btn-light btn-square me-3 d-flex border border-3" to="">Upvote <i
-                                                            className="bi bi-caret-up-fill"></i></button>
-                                                        <Link className="btn btn-success d-flex px-4 border border-1" to="/jobDetail">Apply</Link>
+                                                    <div
+                                                        className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                                        <div className="d-flex mb-3">
+                                                            <button className="btn btn-light btn-square me-3 d-flex border border-3" to="">Upvote <i
+                                                                className="bi bi-caret-up-fill"></i></button>
+                                                            <Link className="btn btn-success d-flex px-4 border border-1" to="/jobDetail">Apply</Link>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         ))}
                                     </div>
                                 </div>
@@ -103,29 +101,29 @@ const Acs = () => {
                                     <div className="filter-content mx-2 px-3">
                                         <div className="card-body shadow-none d-inline px-5">
                                             <div className="form-check">
-                                                <input className="form-check-input shadow-none border border-secondary fs-4" type="checkbox" value="" id=""/>
-                                                    <label className="form-check-label m-1" for="flexCheckDefault">
-                                                        Hybrid
-                                                    </label>
+                                                <input className="form-check-input shadow-none border fs-4" type="checkbox" value="" id="" />
+                                                <label className="form-check-label m-1" for="flexCheckDefault">
+                                                    Hybrid
+                                                </label>
+                                            </div>
+                                            <div className="form-check ">
+                                                <input className="form-check-input shadow-none border fs-4" type="checkbox" value="" id="" />
+                                                <label className="form-check-label m-1" for="flexCheckDefault">
+                                                    Onsite
+                                                </label>
                                             </div>
                                             <div className="form-check">
-                                                <input className="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
-                                                    <label className="form-check-label m-1" for="flexCheckDefault">
-                                                        Onsite
-                                                    </label>
-                                            </div>
-                                            <div className="form-check">
-                                                <input className="form-check-input shadow-none border border-secondary fs-4 " type="checkbox" value="" id=""/>
-                                                    <label className="form-check-label m-1" for="flexCheckDefault">
-                                                        Remote
-                                                    </label>
+                                                <input className="form-check-input shadow-none border  fs-4 " type="checkbox" value="" id="" />
+                                                <label className="form-check-label m-1" for="flexCheckDefault">
+                                                    Remote
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
                                 <div className='text-center'>
-                                <a className="btn btn-light border border-3 mb-3 rounded-0">Apply Changes</a>
-                                </div>      
+                                    <a className="btn btn-light border border-3 mb-3 rounded-0">Apply Changes</a>
+                                </div>
                             </div>
                         </div>
                     </div>

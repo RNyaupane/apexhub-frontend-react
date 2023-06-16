@@ -56,7 +56,7 @@ const Nav = () => {
                         <li className="nav-item dropdown">
                             <a className="nav-link nav-icon" data-bs-toggle="dropdown">
                                 <i className="bi bi-bell"></i>
-                                <span className="badge bg-danger rounded-circle badge-number">2</span> </a>
+                                <span className="badge bg-danger rounded-circle  badge-number">2</span> </a>
                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
                                 <li className="dropdown-header">
                                     You have 2 new notifications
@@ -140,37 +140,37 @@ const Nav = () => {
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
                         <Link className="nav-link" to="/" >
-                            <i className="bi bi-house-door-fill navIcons"></i>
+                            <i className="bi bi-house-door fs-4 navIcons"></i>
                             <span className="navTabs">Home</span>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/apexShop">
-                            <i className="bi bi-bag-fill navIcons"></i>
+                            <i className="bi bi-bag fw-bold fs-4 navIcons"></i>
                             <span className="navTabs">A-shop</span>
                         </Link>
                     </li>
                     <li className="nav-item ">
                         <Link className="nav-link" to="/">
-                            <i className="bi bi-briefcase-fill navIcons"></i>
+                            <i className="bi bi-briefcase fs-4 navIcons"></i>
                             <span className="navTabs">Jobs</span>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/notification">
-                            <i className="bi bi-bell-fill navIcons"></i>
+                            <i className="bi bi-bell fs-4 navIcons"></i>
                             <span className="navTabs">Notifications</span>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/aboutUs">
-                            <i className="bi bi-info-circle-fill navIcons"></i>
+                            <i className="bi bi-info-circle fs-4 navIcons"></i>
                             <span className="navTabs">About us</span>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/contactUs">
-                            <i className="bi bi-telephone-fill navIcons"></i>
+                            <i className="bi bi-telephone fs-4 navIcons"></i>
                             <span className="navTabs">Contact us</span>
                         </Link>
                     </li>

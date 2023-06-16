@@ -26,7 +26,7 @@ const AddBooksForm = () => {
                                     <div className="col-md-3">
                                         <label htmlFor="inputState" className="form-label">Type <span
                                             className="text-danger">*</span></label>
-                                        <select id="inputState" className="form-select" >
+                                        <select id="inputState" className="form-select form-control" >
                                             <option selected disabled>Select</option>
                                             <option>Book</option>
                                             <option>Notes</option>

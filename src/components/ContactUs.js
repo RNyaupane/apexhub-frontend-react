@@ -41,17 +41,17 @@ const ContactUs = () => {
                             <form action="" method="post" role="form" className="w-100 p-4 bg-white  contact-form" >
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="name">Name</label>
-                                    <input type="text" className="form-control " name="name" id="name" required />
+                                    <input type="text" className="form-control shadow-sm" name="name" id="name" required />
                                 </div>
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="Email">Email</label>
-                                    <input type="text" className="form-control" name="email" id="email" required />
+                                    <input type="text" className="form-control shadow-sm" name="email" id="email" required />
                                 </div>
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="Message">Message</label>
-                                    <textarea className="form-control" name="message" rows="10" required></textarea>
+                                    <textarea className="form-control shadow-sm" name="message" rows="10" required></textarea>
                                 </div>
-                                <div className="text-center"><button type="submit" className=" btn btn-success">Send Message</button></div>
+                                <div className="text-center"><button type="submit" className=" btn btn-success p-2 px-3">Send Message</button></div>
                             </form>
                         </div>
                     </div>

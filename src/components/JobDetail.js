@@ -69,23 +69,23 @@ const JobDetail = () => {
                                         <form>
                                             <div className="row g-3">
                                                 <div className="col-12 col-sm-6">
-                                                    <input type="text" className="form-control" placeholder="Your Name" />
+                                                    <input type="text" className="form-control shadow-none py-2" placeholder="Your Name" />
                                                 </div>
                                                 <div className="col-12 col-sm-6">
-                                                    <input type="email" className="form-control" placeholder="Your Email" />
+                                                    <input type="email" className="form-control py-2" placeholder="Your Email" />
                                                 </div>
                                                 <div className="col-12 col-sm-6">
-                                                    <input type="text" className="form-control" placeholder="Portfolio Website Link" />
+                                                    <input type="text" className="form-control py-2" placeholder="Portfolio Website Link" />
                                                 </div>
                                                 <div className="col-12 col-sm-6">
-                                                    <input type="text" className="form-control" placeholder="Github Username" />
+                                                    <input type="text" className="form-control py-2" placeholder="Github Username" />
                                                 </div>
                                                 <div className="col-12 col-sm-6">
                                                     <label htmlFor="cvFile" className="col-form-label">&nbsp;Attach a CV (.pdf) :</label>
-                                                    <input type="file" className="form-control bg-white" />
+                                                    <input type="file" className="form-control bg-white py-2" />
                                                 </div>
                                                 <div className="col-12">
-                                                    <textarea className="form-control" rows="5" placeholder="Coverletter"></textarea>
+                                                    <textarea className="form-control py-2" rows="5" placeholder="Coverletter"></textarea>
                                                 </div>
                                                 <div className="col-12">
                                                     <button className="btn btn-success w-100" type="submit">Apply Now</button>

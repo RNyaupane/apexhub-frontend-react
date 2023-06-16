@@ -61,7 +61,7 @@ export const bookData = [
         id : 2,
         bookcategory:"Book",
         bookimageurl:bookPhoto,
-        bookname:"C programming by roshan nyaupane",
+        bookname:"C programming ",
         price:"$400",
     },
     {
@@ -103,7 +103,7 @@ export const bookData = [
         id : 8,
         bookcategory:"Book",
         bookimageurl:bookPhoto,
-        bookname:"C programming by roshan nyaupane",
+        bookname:"C programming",
         price:"$400",
     },
     {

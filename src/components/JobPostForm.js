@@ -28,9 +28,9 @@ const JobPostForm = () => {
                                 <div className="col-md-3">
                                     <label htmlFor="inputState" className="form-label">Job Type <span
                                             className="text-danger">*</span></label>
-                                    <select id="inputState" className="form-select" >
+                                    <select id="inputState" className="form-select form-control" >
                                         <option selected disabled>Select</option>
-                                        <option>Full time</option>
+                                        <option className='HHHHH'>Full time</option>
                                         <option>Part time</option>
                                     </select>
                                 </div>

@@ -13,8 +13,11 @@ const aShop = () => {
     <section className="section dashboard mt-4 bg-white shadow-lg">
       <div className="row m-0 p-0">
         <div className=" my-2 py-3 px-4 ">
-          <button className="btn btn-gray border dropdown-toggle rounded-0 bg-white" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Category
+          <Link to={'/addBooksForm'} type="button" className="btn btn-success mx-0 px-4 py-2 rounded-0 rounded-end fw-bold ">
+            <i className="bi bi-plus-circle-fill"></i> Add<span className='d-none d-sm-inline d-md-inline d-lg-inline'> Item</span>
+          </Link>
+          <button className="btn btn-gray border dropdown-toggle rounded-0 bg-white py-2 px-4 mx-3 fw-3" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          <span className='d-none d-sm-inline d-md-inline d-lg-inline'> Select</span> Category
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
             <li><button className="dropdown-item" type="button">Text Book</button></li>
@@ -25,15 +28,12 @@ const aShop = () => {
             <li><hr className="dropdown-divider"/></li>
             <li><button className="dropdown-item" type="button">Story</button></li>
           </ul>
-
-          <Link to={'/addBooksForm'} type="button" className="btn mx-2 px-4 rounded-0 text-white" style={{backgroundColor:'#2b2b2be6'}}>
-            <i className="bi bi-plus-circle"></i> Add<span className='d-none d-sm-inline d-md-inline d-lg-inline'> Item</span></Link>
         </div>
         
         <div className="col-lg-12">
-          <div className="row px-3">
+          <div className="row px-3 ">
             {bookData.map((props) => (
-              <div className=" col-lg-5 col-md-5 card dark m-1 rounded-2 productCard">
+              <div className=" d-flex flex-row col-lg-5 col-md-5  card dark m-1 rounded-2 productCard">
                 <img src={props.bookimageurl} className="card-img-top border border-1 rounded-0 imagess"
                   alt="..."/>
                 <div className="card-body shadow-none ">
