@@ -8,7 +8,7 @@ const ContactUs = () => {
         <main id="main" className="main">
             <section className="section profile m-4 contact">
                 <div className="container">
-                    <div className="row shadow-lg" data-aos="fade-in">
+                    <div className="row shadow-sm" data-aos="fade-in">
                         {/* <!-- <h1 className="bg-white m-0 px-3 py-3">Contact Us</h1> --> */}
                         <div className="col-lg-5 d-flex align-items-stretch m-0 p-0">
                             <div className="info p-3 bg-white w-100 ">
@@ -41,15 +41,15 @@ const ContactUs = () => {
                             <form action="" method="post" role="form" className="w-100 p-4 bg-white  contact-form" >
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="name">Name</label>
-                                    <input type="text" className="form-control shadow-sm" name="name" id="name" required />
+                                    <input type="text" className="form-control shadow-none shadow-sm" name="name" id="name" required />
                                 </div>
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="Email">Email</label>
-                                    <input type="text" className="form-control shadow-sm" name="email" id="email" required />
+                                    <input type="text" className="form-control shadow-none shadow-sm" name="email" id="email" required />
                                 </div>
                                 <div className="form-group p-2 mb-3">
                                     <label htmlFor="Message">Message</label>
-                                    <textarea className="form-control shadow-sm" name="message" rows="10" required></textarea>
+                                    <textarea className="form-control shadow-none shadow-sm" name="message" rows="10" required></textarea>
                                 </div>
                                 <div className="text-center"><button type="submit" className=" btn btn-success p-2 px-3">Send Message</button></div>
                             </form>

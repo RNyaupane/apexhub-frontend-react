@@ -216,7 +216,7 @@ const ProductDetail = () => {
                                                             src={AhLogo} alt="avatar" width="65px" height="55px" />
                                                         <div className="flex-grow-1 flex-shrink-1 p-2 mx-5 rounded">
                                                             <div className="input-group" style={{marginLeft:'30px'}}>
-                                                                <textarea className="form-control shadow-none" id="textAreaExample" rows="2"
+                                                                <textarea className="form-control shadow-none shadow-none" id="textAreaExample" rows="2"
                                                                     placeholder="Write a comment" row='2'></textarea>
                                                                 <button className="btn btn-white border border-1" type="button" title="Send">
                                                                     <i className="bi bi-send text-success"></i>

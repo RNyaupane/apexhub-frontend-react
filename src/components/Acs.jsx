@@ -84,11 +84,11 @@ const Acs = () => {
                                             <div className="form-row d-flex">
                                                 <div className="form-group col-md-5">
                                                     <label>Min</label>
-                                                    <input type="number" className="form-control shadow-none" id="inputEmail4" placeholder="$0" />
+                                                    <input type="number" className="form-control shadow-none shadow-none" id="inputEmail4" placeholder="$0" />
                                                 </div>
                                                 <div className="form-group col-md-5 mx-2 text-right">
                                                     <label>Max</label>
-                                                    <input type="number" className="form-control shadow-none" placeholder="$1,0000" />
+                                                    <input type="number" className="form-control shadow-none shadow-none" placeholder="$1,0000" />
                                                 </div>
                                             </div>
                                         </div>

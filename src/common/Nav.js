@@ -136,7 +136,7 @@ const Nav = () => {
                     </ul>
                 </nav>
             </header>
-            <aside id="sidebar" className="sidebar mt-1 border bg-white">
+            <aside id="sidebar" className="sidebar border-top border-end bg-white">
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
                         <Link className="nav-link" to="/" >

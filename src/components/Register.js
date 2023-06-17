@@ -22,16 +22,16 @@ const Register = () => {
                             </select>
                         </div>
                         <div className="input-group mb-3 pt-2">
-                            <input type="text" className="form-control" placeholder="Name" />
+                            <input type="text" className="form-control shadow-none" placeholder="Name" />
                         </div>
                         <div className="input-group mb-3 pt-2">
-                            <input type="text" className="form-control" placeholder="Email" />
+                            <input type="text" className="form-control shadow-none" placeholder="Email" />
                         </div>
                         <div className="input-group mb-3 pt-2">
-                            <input type="password" className="form-control" placeholder="Password" />
+                            <input type="password" className="form-control shadow-none" placeholder="Password" />
                         </div>
                         <div className="input-group mb-3 pt-2">
-                            <input type="password" className="form-control" placeholder="Confirm Password" />
+                            <input type="password" className="form-control shadow-none" placeholder="Confirm Password" />
                         </div>
                         <div className="form-check cursor-pointer pt-2">
                             <input className="form-check-input" type="radio" name="flexRadioAgree" id="flexRadioAgree" />

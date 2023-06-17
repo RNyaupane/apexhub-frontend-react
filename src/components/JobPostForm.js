@@ -18,17 +18,17 @@ const JobPostForm = () => {
                                 <div className="col-md-5">
                                     <label htmlFor="jobTitle" className="form-label">Job Title <span
                                             className="text-danger">*</span></label>
-                                    <input type="text" className="form-control" id="jobTitle" required />
+                                    <input type="text" className="form-control shadow-none" id="jobTitle" required />
                                 </div>
                                 <div className="col-md-4">
                                     <label htmlFor="inputState" className="form-label">No of vacancy <span
                                             className="text-danger">*</span></label>
-                                    <input type="number" className="form-control" id="" required />
+                                    <input type="number" className="form-control shadow-none" id="" required />
                                 </div>
                                 <div className="col-md-3">
                                     <label htmlFor="inputState" className="form-label">Job Type <span
                                             className="text-danger">*</span></label>
-                                    <select id="inputState" className="form-select form-control" >
+                                    <select id="inputState" className="form-select form-control shadow-none" >
                                         <option selected disabled>Select</option>
                                         <option className='HHHHH'>Full time</option>
                                         <option>Part time</option>
@@ -36,31 +36,31 @@ const JobPostForm = () => {
                                 </div>
                                 <div className="col-md-5">
                                     <label htmlFor="" className="form-label">Location <span className="text-danger">*</span></label>
-                                    <input type="text" className="form-control" id="" required />
+                                    <input type="text" className="form-control shadow-none" id="" required />
                                 </div>
                                 <div className="col-md-4">
                                     <label htmlFor="" className="form-label">Salary</label>
-                                    <input type="number" className="form-control" id="" />
+                                    <input type="number" className="form-control shadow-none" id="" />
                                 </div>
                                 <div className="col-md-3">
                                     <label htmlFor="" className="form-label">Company Logo</label>
-                                    <input className="form-control" type="file" id=""  />
+                                    <input className="form-control shadow-none" type="file" id=""  />
                                 </div>
                                 <div className="col-md-6">
                                     <label htmlFor="" className="form-label">About The Company</label>
-                                    <textarea type="" className="form-control" id="" rows="5" placeholder="Enter company details..."></textarea>
+                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter company details..."></textarea>
                                 </div>
                                 <div className="col-md-6">
                                     <label htmlFor="" className="form-label">About The Job<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control" id="" rows="5" placeholder="Enter job description..."></textarea>
+                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter job description..."></textarea>
                                 </div>
                                 <div className="col-md-6">
                                     <label htmlFor="" className="form-label">Job Renspobility<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control" id="" rows="5" placeholder="Enter company details..."></textarea>
+                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter company details..."></textarea>
                                 </div>
                                 <div className="col-md-6">
                                     <label htmlFor="" className="form-label">Qualifications/Skills<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control" id="" rows="5" placeholder="Enter job description..."></textarea>
+                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter job description..."></textarea>
                                 </div>
                                 {/* <div className="col-12">
                                     <label htmlFor="" className="form-label">Renspobility<span className='text-danger'>*</span></label>
@@ -72,7 +72,7 @@ const JobPostForm = () => {
                                 </div> */}
                                 <div className="text-center">
                                     <button type="submit" className="btn btn-success rounded-0">Submit</button>
-                                    <button type="reset" className="btn btn-dark text-white rounded-0 border border-dark mx-2">Reset</button>
+                                    <button type="reset" className="btn btn-light border-dark text-dark rounded-0 border border-dark mx-2">Reset</button>
                                 </div>
                             </form>
                         </div>

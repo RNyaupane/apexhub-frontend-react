@@ -16,17 +16,17 @@ const AddBooksForm = () => {
                                     <div className="col-md-5">
                                         <label htmlFor="jobTitle" className="form-label">Name of the book <span
                                             className="text-danger">*</span></label>
-                                        <input type="text" className="form-control" id="bookName" required />
+                                        <input type="text" className="form-control shadow-none" id="bookName" required />
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="inputState" className="form-label">Price of the book <span
                                             className="text-danger">*</span></label>
-                                        <input type="number" className="form-control" id="bookPrice" required />
+                                        <input type="number" className="form-control shadow-none" id="bookPrice" required />
                                     </div>
                                     <div className="col-md-3">
                                         <label htmlFor="inputState" className="form-label">Type <span
                                             className="text-danger">*</span></label>
-                                        <select id="inputState" className="form-select form-control" >
+                                        <select id="inputState" className="form-select form-control shadow-none" >
                                             <option selected disabled>Select</option>
                                             <option>Book</option>
                                             <option>Notes</option>
@@ -35,19 +35,19 @@ const AddBooksForm = () => {
                                     </div>
                                     <div className="col-md-5">
                                         <label htmlFor="" className="form-label">Author</label>
-                                        <input type="text" className="form-control" id="bookAuthor" />
+                                        <input type="text" className="form-control shadow-none" id="bookAuthor" />
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="" className="form-label">Quantity</label>
-                                        <input type="number" className="form-control" id="bookQuantity" />
+                                        <input type="number" className="form-control shadow-none" id="bookQuantity" />
                                     </div>
                                     <div className="col-md-3">
                                         <label htmlFor="" className="form-label">Photo of the book</label>
-                                        <input className="form-control" type="file" id="bookPhoto" />
+                                        <input className="form-control shadow-none" type="file" id="bookPhoto" />
                                     </div>
                                     <div className="text-center mt-5">
-                                        <button type="submit" className="btn btn-success rounded-0">Submit</button>
-                                        <button type="reset" className="btn btn-dark text-white rounded-0 border border-dark mx-2">Reset</button>
+                                        <button type="submit" className="btn btn-success">Submit</button>
+                                        <button type="reset" className="btn btn-light border-dark text-dark mx-2">Reset</button>
                                     </div>
                                 </form>
                             </div>

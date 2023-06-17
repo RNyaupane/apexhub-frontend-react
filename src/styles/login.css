@@ -18,10 +18,10 @@ body {
 .form-control{
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: none;
 }
-.form-control:active{
+.form-control:focus{
     border:1px solid #009065;
-    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(34, 255, 0, 0.6); */
     box-shadow: none;
   }
   .dropdown-item:active{

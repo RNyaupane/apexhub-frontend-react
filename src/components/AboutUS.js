@@ -10,7 +10,7 @@ const AboutUS = () => {
   return (
     <main id="main" className="main">
     {/* <!-- Feature Section --> */}
-    <section id="about" className="about bg-white mt-4 shadow-lg">
+    <section id="about" className="about bg-white mt-4 shadow-sm">
       <div className="container">
         <div className="section-title">
           <h2 className="fw-bold">About Us</h2>

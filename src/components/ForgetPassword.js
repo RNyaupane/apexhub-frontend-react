@@ -14,7 +14,7 @@ const ForgetPassword = () => {
           </p>
           <form action="#">
             <div className="input-group mb-3 pt-2">
-              <input type="text" className="form-control" placeholder="Email" />
+              <input type="text" className="form-control shadow-none" placeholder="Email" />
             </div>
             <div className="d-grid mb-3 pt-2">
               <button type="button" className="btn btn-primary">

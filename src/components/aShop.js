@@ -10,7 +10,7 @@ import { bookData } from '../assets/images/Data';
 const aShop = () => {
   return (
     <main id="main" className="main">
-    <section className="section dashboard mt-4 bg-white shadow-lg">
+    <section className="section dashboard mt-4 bg-white">
       <div className="row m-0 p-0">
         <div className=" my-2 py-3 px-4 ">
           <Link to={'/addBooksForm'} type="button" className="btn btn-success mx-0 px-4 py-2 rounded-0 rounded-end fw-bold ">
@@ -33,8 +33,8 @@ const aShop = () => {
         <div className="col-lg-12">
           <div className="row px-3 ">
             {bookData.map((props) => (
-              <div className=" d-flex flex-row col-lg-5 col-md-5  card dark m-1 rounded-2 productCard">
-                <img src={props.bookimageurl} className="card-img-top border border-1 rounded-0 imagess"
+              <div className=" d-flex flex-row col-lg-5 col-md-5 border card dark m-1 rounded-0 productCard">
+                <img src={props.bookimageurl} className="card-img-top  rounded-0 imagess"
                   alt="..."/>
                 <div className="card-body shadow-none ">
                   <div className="text-section ">

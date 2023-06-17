@@ -24,13 +24,13 @@ const Notification = () => {
                                         <li>
                                             <a className="dropdown-item">Mark as all read</a>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <a className="dropdown-item">Delete all notifications</a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                                 </div>
-                            <div className="notification-list notification-list shadow">
+                            <div className="notification-list notification-list shadow-sm">
                                 <div className="notification-list_content">
                                     <i className="bi bi-circle-fill px-4 py-1 text-success"></i>
                                     <div className="notification-list_img">
@@ -44,7 +44,7 @@ const Notification = () => {
                                 </div>
                             </div>
 
-                            <div className="notification-list notification-list shadow">
+                            <div className="notification-list notification-list shadow-sm">
                                 <div className="notification-list_content">
                                     <i className="bi bi-circle-fill px-4 py-1" style={{color: '#ffffff00'}}></i>
                                     <div className="notification-list_img">
