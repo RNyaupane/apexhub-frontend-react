@@ -1,19 +1,19 @@
 import React from 'react'
 import {  Route, Routes } from 'react-router-dom';
 import Nav from './common/Nav';
-import Acs from './components/Acs.jsx';
-import ApexShop from './components/aShop.js'
-import AddBooksForm from './components/AddBooksForm';
-import ProductDetail from './components/ProductDetail';
-import AboutUs from './components/AboutUS';
-import ContactUs from './components/ContactUs.js';
-import JobDetail from './components/JobDetail';
-import Notification from './components/Notification';
-import JobPostForm from './components/JobPostForm';
-import StudentProfile from './components/StudentProfile';
-import Login from './components/Login'
-import Register from './components/Register'
-import ForgetPassword from './components/ForgetPassword'
+import Acs from './pages/Acs.jsx';
+import ApexShop from './pages/ApexShop.js'
+import AddBooksForm from './pages/AddBooksForm';
+import ProductDetail from './pages/ProductDetail';
+import AboutUs from './pages/AboutUS';
+import ContactUs from './pages/ContactUs.js';
+import JobDetail from './pages/JobDetail';
+import Notification from './pages/Notification';
+import JobPostForm from './pages/JobPostForm';
+import StudentProfile from './pages/StudentProfile';
+import Login from './pages/Login'
+import Register from './pages/Register'
+import ForgetPassword from './pages/ForgetPassword'
 import 'jquery';
 
 const App = () => {

@@ -14,35 +14,34 @@ const AddBooksForm = () => {
                                 <hr className="m-2 p-0" />
                                 <form className="row g-3">
                                     <div className="col-md-5">
-                                        <label htmlFor="jobTitle" className="form-label">Name of the book <span
-                                            className="text-danger">*</span></label>
+                                        <label htmlFor="bookName" className="form-label">Name of the book <span className="text-danger">*</span></label>
                                         <input type="text" className="form-control shadow-none" id="bookName" required />
                                     </div>
                                     <div className="col-md-4">
-                                        <label htmlFor="inputState" className="form-label">Price of the book <span
-                                            className="text-danger">*</span></label>
+                                        <label htmlFor="bookPrice" className="form-label">Price of the book <span className="text-danger">*</span></label>
                                         <input type="number" className="form-control shadow-none" id="bookPrice" required />
                                     </div>
                                     <div className="col-md-3">
-                                        <label htmlFor="inputState" className="form-label">Type <span
-                                            className="text-danger">*</span></label>
-                                        <select id="inputState" className="form-select form-control shadow-none" >
-                                            <option selected disabled>Select</option>
-                                            <option>Book</option>
+                                        <label htmlFor="selectBookCategory" className="form-label">Book Type <span className="text-danger">*</span></label>
+                                        <select id="selectBookCategory" className="form-select form-control shadow-none" defaultValue={"Select"}>
+                                            <option disabled>Select</option>
+                                            <option>All</option>
+                                            <option>Books</option>
                                             <option>Notes</option>
-                                            <option>Other course material</option>
+                                            <option>Solution</option>
+                                            <option>Other Material</option>
                                         </select>
                                     </div>
                                     <div className="col-md-5">
-                                        <label htmlFor="" className="form-label">Author</label>
+                                        <label htmlFor="bookAuthor" className="form-label">Author</label>
                                         <input type="text" className="form-control shadow-none" id="bookAuthor" />
                                     </div>
                                     <div className="col-md-4">
-                                        <label htmlFor="" className="form-label">Quantity</label>
+                                        <label htmlFor="bookQuantity" className="form-label">Quantity</label>
                                         <input type="number" className="form-control shadow-none" id="bookQuantity" />
                                     </div>
                                     <div className="col-md-3">
-                                        <label htmlFor="" className="form-label">Photo of the book</label>
+                                        <label htmlFor="bookPhoto" className="form-label">Photo of the book</label>
                                         <input className="form-control shadow-none" type="file" id="bookPhoto" />
                                     </div>
                                     <div className="text-center mt-5">

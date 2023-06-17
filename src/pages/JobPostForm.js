@@ -21,55 +21,47 @@ const JobPostForm = () => {
                                     <input type="text" className="form-control shadow-none" id="jobTitle" required />
                                 </div>
                                 <div className="col-md-4">
-                                    <label htmlFor="inputState" className="form-label">No of vacancy <span
+                                    <label htmlFor="noumberOfVacancy" className="form-label">No of vacancy <span
                                             className="text-danger">*</span></label>
-                                    <input type="number" className="form-control shadow-none" id="" required />
+                                    <input type="number" className="form-control shadow-none" id="noumberOfVacancy" required />
                                 </div>
                                 <div className="col-md-3">
                                     <label htmlFor="inputState" className="form-label">Job Type <span
                                             className="text-danger">*</span></label>
-                                    <select id="inputState" className="form-select form-control shadow-none" >
-                                        <option selected disabled>Select</option>
+                                    <select id="inputState" className="form-select form-control shadow-none" defaultValue={'Select'}>
+                                        <option disabled>Select</option>
                                         <option className='HHHHH'>Full time</option>
                                         <option>Part time</option>
                                     </select>
                                 </div>
                                 <div className="col-md-5">
-                                    <label htmlFor="" className="form-label">Location <span className="text-danger">*</span></label>
-                                    <input type="text" className="form-control shadow-none" id="" required />
+                                    <label htmlFor="jobLocation" className="form-label">Location <span className="text-danger">*</span></label>
+                                    <input type="text" className="form-control shadow-none" id="jobLocation" required />
                                 </div>
                                 <div className="col-md-4">
-                                    <label htmlFor="" className="form-label">Salary</label>
-                                    <input type="number" className="form-control shadow-none" id="" />
+                                    <label htmlFor="jobSalary" className="form-label">Salary</label>
+                                    <input type="number" className="form-control shadow-none" id="jobSalary" />
                                 </div>
                                 <div className="col-md-3">
-                                    <label htmlFor="" className="form-label">Company Logo</label>
-                                    <input className="form-control shadow-none" type="file" id=""  />
+                                    <label htmlFor="companyLogo" className="form-label">Company Logo</label>
+                                    <input className="form-control shadow-none" type="file" id="companyLogo"  />
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="" className="form-label">About The Company</label>
-                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter company details..."></textarea>
+                                    <label htmlFor="aboutCompany" className="form-label">About The Company</label>
+                                    <textarea type="" className="form-control shadow-none" id="aboutCompany" rows="5" placeholder="Enter company details..."></textarea>
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="" className="form-label">About The Job<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter job description..."></textarea>
+                                    <label htmlFor="aboutJob" className="form-label">About The Job<span className='text-danger'>*</span></label>
+                                    <textarea type="" className="form-control shadow-none" id="aboutJob" rows="5" placeholder="Enter job description..."></textarea>
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="" className="form-label">Job Renspobility<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter company details..."></textarea>
+                                    <label htmlFor="jobResponsibility" className="form-label">Job Renspobility<span className='text-danger'>*</span></label>
+                                    <textarea type="" className="form-control shadow-none" id="jobResponsibility" rows="5" placeholder="Enter company details..."></textarea>
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="" className="form-label">Qualifications/Skills<span className='text-danger'>*</span></label>
-                                    <textarea type="" className="form-control shadow-none" id="" rows="5" placeholder="Enter job description..."></textarea>
+                                    <label htmlFor="qualificationAndSkills" className="form-label">Qualifications/Skills<span className='text-danger'>*</span></label>
+                                    <textarea type="" className="form-control shadow-none" id="qualificationAndSkills" rows="5" placeholder="Enter job description..."></textarea>
                                 </div>
-                                {/* <div className="col-12">
-                                    <label htmlFor="" className="form-label">Renspobility<span className='text-danger'>*</span></label>
-                                    <ReactQuill theme="snow" value={value1} onChange={value1} />
-                                </div>
-                                <div className="col-12" style={{height:'200px'}}>
-                                    <label htmlFor="" className="form-label">Qualifications/Skills <span className='text-danger'>*</span> </label>
-                                    <ReactQuill theme="snow" value={value2} onChange={value2} />
-                                </div> */}
                                 <div className="text-center">
                                     <button type="submit" className="btn btn-success rounded-0">Submit</button>
                                     <button type="reset" className="btn btn-light border-dark text-dark rounded-0 border border-dark mx-2">Reset</button>

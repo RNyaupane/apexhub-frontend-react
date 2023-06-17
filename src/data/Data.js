@@ -1,8 +1,8 @@
-import spaceXLogo from './spacex.webp'
-import microsofLtogo from './Microsoft logo.png'
-import appleLogo from './apple-logo.png'
+import spaceXLogo from '../assets/images/spacex.webp'
+import microsofLtogo from '../assets/images/Microsoft logo.png'
+import appleLogo from '../assets/images/apple-logo.png'
 
-import bookPhoto from './book3.jpg'
+import bookPhoto from '../assets/images/book3.jpg'
 
 export const jobData = [
     {
@@ -73,14 +73,14 @@ export const bookData = [
     },
     {
         id : 4,
-        bookcategory:"Notes",
+        bookcategory:"Book",
         bookimageurl:bookPhoto,
         bookname:"Sociology",
         price:"$300",
     },
     {
         id : 5,
-        bookcategory:"Notes",
+        bookcategory:"Solution",
         bookimageurl:bookPhoto,
         bookname:"Marketing",
         price:"$1000",
@@ -94,7 +94,7 @@ export const bookData = [
     },
     {
         id : 7,
-        bookcategory:"Notes",
+        bookcategory:"Solution",
         bookimageurl:bookPhoto,
         bookname:"Advance JAVA",
         price:"$500",
@@ -115,7 +115,7 @@ export const bookData = [
     },
     {
         id : 10,
-        bookcategory:"Notes",
+        bookcategory:"Other Material",
         bookimageurl:bookPhoto,
         bookname:"Sociology",
         price:"$300",
@@ -129,7 +129,7 @@ export const bookData = [
     },
     {
         id : 12,
-        bookcategory:"Notes",
+        bookcategory:"Other Material",
         bookimageurl:bookPhoto,
         bookname:"DSA",
         price:"$5000",

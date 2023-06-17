@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import '../main.js';
 
-import { jobData } from '../assets/images/Data.js';
+import { jobData } from '../data/Data.js';
 const Acs = () => {
 
     return (
