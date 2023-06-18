@@ -8,17 +8,8 @@ import '../styles/style.css'
 
 import { bookData } from '../data/Data';
 
-const uniqueBookCategory = [
-  ... new Set(
-    bookData.map((props) =>{
-      return props.bookcategory;
-    })
-  )
-]
-
 const ApexShop = () => {
   const [bookDataItem, setBookDataItem] = useState(bookData);
-  const [bookList, setBookList] = useState(uniqueBookCategory);
 
   const filterBookDataItem = (bookcategory) => {
     const filteredBookDataItems = bookData.filter((currentElement) => {
