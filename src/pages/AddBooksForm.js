@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 const AddBooksForm = () => {
+    const [productName, setProductName] = useState("");
+    const [productPrice, setProductPrice] = useState("");
+    const [productType, setProductType] = useState("");
+
 
     const bookFormSubmitHandler = (event) =>{
         event.preventDefault();

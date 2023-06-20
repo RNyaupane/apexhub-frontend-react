@@ -13,8 +13,8 @@ const BookCard = ({bookDataItem}) => {
                 alt="..."/>
             <div className="card-body shadow-none ">
                 <div className="text-section ">
-                <a className="h4 text-decoration-none product-category">{bookcategory}</a>
-                <p className="card-text m-0 fs-6 text-dark fs-5"><span className="fs-5"></span>{bookname}</p>
+                <a className="h4 text-decoration-none product-category">{bookname}</a>
+                <p className="card-text m-0 fs-6 text-dark fs-5"><span className="fs-5"></span>{bookcategory}</p>
                 <p className="card-text position-absolute bottom-0 posted-time pb-3 ">(28 min ago)</p>
                 </div>
                 <div className="cta-section">
