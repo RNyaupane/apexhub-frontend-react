@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../common/Nav';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../styles/productDetail.css'
@@ -11,6 +12,8 @@ import kapsBaby from '../assets/images/me.jpg'
 import AhLogo from '../assets/images/AH logo.png'
 const ProductDetail = () => {
     return (
+        <>
+        <Nav/>
         <main id="main" className="main">
             <div className="col-lg-14"></div>
             <div className="row">
@@ -37,7 +40,7 @@ const ProductDetail = () => {
                                                         <i className="bi bi-star-fill rating-color fs-4"></i>
                                                         <i className="bi bi-star rating-color fs-4"></i>
                                                     </div>
-                                                    <a className="review-count text-decoration-none fs-6 fw-bold text-secondary">(12&nbsp;Reviews)</a>
+                                                    <a href='#' className="review-count text-decoration-none fs-6 fw-bold text-secondary">(12&nbsp;Reviews)</a>
                                                 </div>
                                                 {/* <div> */}
                                                 <img src={bookPhoto} alt="GOG" className="img-fluid rounded float-end img-thumbnail " />
@@ -91,7 +94,7 @@ const ProductDetail = () => {
 
                                         <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div className="modal-dialog">
-                                                <div className="modal-content">
+                                                <div className="modal-content">href
                                                     <div className="modal-header">
                                                         <h1 className="modal-title fs-5" id="exampleModalLabel">Rate the product</h1>
                                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -101,15 +104,15 @@ const ProductDetail = () => {
                                                             <h6 className="mb-0 text-dark text-center">Select Star</h6>
                                                             <div className="rating">
                                                                 <input type="radio" name="rating" value="5" id="5" />
-                                                                <label for="5">☆</label>
+                                                                <label htmlFor="5">☆</label>
                                                                 <input type="radio" name="rating" value="4" id="4" />
-                                                                <label for="4">☆</label>
+                                                                <label htmlFor="4">☆</label>
                                                                 <input type="radio" name="rating" value="3" id="3" />
-                                                                <label for="3">☆</label>
+                                                                <label htmlFor="3">☆</label>
                                                                 <input type="radio" name="rating" value="2" id="2" />
-                                                                <label for="2">☆</label>
+                                                                <label htmlFor="2">☆</label>
                                                                 <input type="radio" name="rating" value="1" id="1" />
-                                                                <label for="1">☆</label>
+                                                                <label htmlFor="1">☆</label>
                                                             </div>
                                                             <div className="buttons px-4 mt-0">
                                                                 <button className="btn btn-warning btn-block rating-submit fs-5" data-bs-dismiss="modal">Submit</button>
@@ -235,6 +238,7 @@ const ProductDetail = () => {
                 </div>
             </div>
         </main>
+        </>
     )
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import {  Route, Routes } from 'react-router-dom';
-import Nav from './common/Nav';
 import Acs from './pages/Acs.jsx';
 import ApexShop from './pages/ApexShop.js'
 import AddBooksForm from './pages/AddBooksForm';
@@ -14,12 +13,13 @@ import StudentProfile from './pages/StudentProfile';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgetPassword from './pages/ForgetPassword'
+import ResetPassword from './pages/ResetPassword';
 import 'jquery';
 
 const App = () => {
   return (
     <>
-      <Nav />
+      
       <Routes>
         <Route path='/' element={<Acs />} />
         <Route path='/apexShop' element={<ApexShop />} />
@@ -34,6 +34,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/forgetPassword' element={<ForgetPassword />} />
+        <Route path='/resetPassword' element={<ResetPassword/>} />
       </Routes>
       </>
   )

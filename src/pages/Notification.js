@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/notification.css"
 import "../styles/style.css"
+import Nav from '../common/Nav';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -10,6 +11,8 @@ import profileImage from '../assets/images/profile-img.jpg'
 
 const Notification = () => {
     return (
+        <>
+        <Nav/>
         <main id="main" className="main">
             <section className="section dashboard">
                 <div className="col-lg-8">
@@ -62,6 +65,7 @@ const Notification = () => {
                 </div>
             </section>
         </main>
+        </>
     )
 }
 

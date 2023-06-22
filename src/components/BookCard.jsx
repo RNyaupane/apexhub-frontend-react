@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-
-const BookCard = ({bookDataItem}) => {
+const BookCard = ({bookData}) => {
+  const[bookDataItem,setBookDataItem] = useState(bookData)
   return (
     <>
     {bookDataItem.map((props) => {
-        const {id, bookcategory, bookimageurl, bookname,price} = props;
+        const {id, bookcategory, bookimageurl, bookname, price} = props;
         return(
             <div className=" d-flex flex-row col-lg-5 col-md-5 border card dark m-1 rounded-0 productCard" key={id}>
             <img src={bookimageurl} className="card-img-top  rounded-0 imagess"

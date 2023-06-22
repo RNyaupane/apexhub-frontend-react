@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/style.css'
+import Nav from '../common/Nav';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -7,6 +8,8 @@ import spaceXLogo from '../assets/images/spacex.webp'
 
 const JobDetail = () => {
     return (
+        <>
+        <Nav/>
         <main id="main" className="main">
             <section className="section dashboard">
                 <div className="row bg-light shadow p-3 mb-5 bg-body rounded mt-4">
@@ -99,6 +102,7 @@ const JobDetail = () => {
                 </div>
             </section>
         </main>
+        </>
     )
 }
 

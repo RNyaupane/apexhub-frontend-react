@@ -1,6 +1,8 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import BookCard from '../components/BookCard';
+import Nav from '../common/Nav';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../styles/aShop.css'
@@ -9,8 +11,12 @@ import '../styles/style.css'
 import { bookData } from '../data/Data';
 
 const ApexShop = () => {
-  const [bookDataItem, setBookDataItem] = useState(bookData);
-
+  const[bookDataItem,setBookDataItem] = useState(bookData)
+  // useEffect(()=>{
+  //   let result = axios.get("http://localhost:8000/api/ashop/categorys/");
+  //   setBookData(result)
+  // },[])
+  
   const filterBookDataItem = (bookcategory) => {
     const filteredBookDataItems = bookData.filter((currentElement) => {
       return currentElement.bookcategory === bookcategory;
@@ -19,6 +25,7 @@ const ApexShop = () => {
   }
   return (
     <>
+      <Nav bookData={bookData}/>
       <main id="main" className="main">
         <section className="section dashboard mt-4 bg-white">
           <div className="row m-0 p-0">
@@ -43,7 +50,7 @@ const ApexShop = () => {
             </div>
             <div className="col-lg-12">
               <div className="row px-3 ">
-                <BookCard bookDataItem={bookDataItem} />
+                <BookCard bookData={bookData} />
               </div>
             </div>
           </div>

@@ -1,10 +1,13 @@
 import React from 'react'
+import Nav from '../common/Nav';
 import '../styles/style.css'
 import '../styles/contactUs.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
 const ContactUs = () => {
     return (
+        <>
+        <Nav/>
         <main id="main" className="main">
             <section className="section profile m-4 contact">
                 <div className="container">
@@ -58,6 +61,7 @@ const ContactUs = () => {
                 </div>
             </section>
         </main>
+        </>
     )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/style.css'
 import '../styles/aboutUs.css'
+import Nav from '../common/Nav';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -8,6 +9,8 @@ import ApexBuildingPhoto from '../assets/images/apexCollegeBuildingPhoto.png'
 
 const AboutUS = () => {
   return (
+    <>
+    <Nav/>
     <main id="main" className="main">
     {/* <!-- Feature Section --> */}
     <section id="about" className="about bg-white mt-4 shadow-sm">
@@ -178,6 +181,7 @@ const AboutUS = () => {
       </div>
     </section>
   </main>
+  </>
   )
 }
 

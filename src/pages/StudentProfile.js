@@ -1,5 +1,6 @@
 import React from 'react'
 import Tab from 'react-bootstrap/Tab';
+import Nav from '../common/Nav';
 import Tabs from 'react-bootstrap/Tabs';
 import '../styles/studentProfile.css'
 import '../styles/style.css'
@@ -11,6 +12,8 @@ import bookPhoto from '../assets/images/book3.jpg'
 import me from '../assets/images/me.jpg'
 const StudentProfile = () => {
   return (
+    <>
+    <Nav/>
     <main id="main" className="main">
       <section className="section profile mt-4">
         <div className="row bg-white">
@@ -300,6 +303,7 @@ const StudentProfile = () => {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

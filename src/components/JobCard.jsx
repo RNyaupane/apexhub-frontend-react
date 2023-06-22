@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const JobCard = ({jobDataItem}) => {
+const JobCard = ({jobData}) => {
+    const[jobDataItem,setJobDataItem] = useState(jobData)
     return (
         <>
             {jobDataItem.map((props) => {

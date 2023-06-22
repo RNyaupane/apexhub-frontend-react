@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "../styles/login.css";
@@ -17,12 +18,12 @@ const ForgetPassword = () => {
               <input type="text" className="form-control shadow-none" placeholder="Email" />
             </div>
             <div className="d-grid mb-3 pt-2">
-              <button type="button" className="btn btn-primary">
-                Reset Password
+              <button type="button" className="btn btn-success">
+                Submit
               </button>
             </div>
             <div className="text-center pt-2">
-              <p>Remember your password? <a href="login.html">Login Now</a></p>
+              <p>Remember your password? <Link to="/login" className='text-success'>Login Now</Link></p>
             </div>
           </form>
         </div>

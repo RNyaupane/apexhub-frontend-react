@@ -64,13 +64,6 @@ export const bookData = [
         price:"$500",
     },
     {
-        id : 1,
-        bookcategory:"Notes",
-        bookimageurl:"https://picsum.photos/100/100",
-        bookname:"ROHAN",
-        price:"$500",
-    },
-    {
         id : 2,
         bookcategory:"Book",
         bookimageurl:"https://picsum.photos/100/100",

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/style.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -10,11 +11,18 @@ import '../main.js';
 import logo from '../assets/images/AH logo.png'
 import profileImage from '../assets/images/profile-img.jpg'
 
-const Nav = () => {
+
+const Nav = (jobData,bookData) => {
+
+    const[search,setSearch] = useState(jobData,bookData)
+
+    const handleSearch = (event) =>{
+        event.preventDefault();
+    }
+
     const handleToggleSidebar = () => {
         document.body.classList.toggle('toggle-sidebar');
     };
-
     const handleToggleSearchBar = () => {
         const searchBar = document.querySelector('.search-bar');
         if (searchBar) {
@@ -36,7 +44,7 @@ const Nav = () => {
 
                 <div className="search-bar d-none d-sm-block d-md-block d-lg-block">
                     <form className="search-form d-flex align-items-center" method="POST" action="#">
-                        <input className='rounded-pill px-3' type="text" name="query" placeholder="Search here..." title="Enter search keyword" />
+                        <input className='rounded-pill px-3' type="text" name="query" placeholder="Search here..." title="Enter search keyword" onChange={(e)=> handleSearch(e.target.value)} />
                         <button type="submit" title="Search">
                             <i className="bi bi-search text-dark"></i>
                         </button>

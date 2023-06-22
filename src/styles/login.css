@@ -7,7 +7,6 @@ body {
     border-top: 3px solid dodgerblue;
 }
 .wrapper a{
-    text-decoration: none;
     color: dodgerblue;
 }
 
@@ -30,3 +29,6 @@ body {
   .form-check-input:checked{
     background-color: #198754;
   }
+ option:hover{
+  background-color: #198754;
+ }
