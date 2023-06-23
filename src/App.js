@@ -9,7 +9,8 @@ import ContactUs from './pages/ContactUs.js';
 import JobDetail from './pages/JobDetail';
 import Notification from './pages/Notification';
 import JobPostForm from './pages/JobPostForm';
-import StudentProfile from './pages/StudentProfile';
+import StudentProfile from './pages/Profile';
+import AdminDashboard from './pages/profile/adminDashboard/AdminDashboard.js';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgetPassword from './pages/ForgetPassword'
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/jobDetail' element={<JobDetail />} />
         <Route path='/jobPostForm' element={<JobPostForm />} />
         <Route path='/studentProfile' element={<StudentProfile />} />
+        <Route path='/dashboard' element={<AdminDashboard />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/forgetPassword' element={<ForgetPassword />} />

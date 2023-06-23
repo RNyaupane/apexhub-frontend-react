@@ -105,7 +105,7 @@ const Nav = (jobData,bookData) => {
                                 <img src={profileImage} alt="Profile" className="rounded-circle" />
                                 <span className="d-none d-md-block dropdown-toggle ps-2">Roshan Nyaupane</span>
                             </a>
-                            <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                            <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile px-3 mt-2">
                                 <li>
                                     <Link className="dropdown-item d-flex align-items-center" to="/studentProfile">
                                         <i className="bi bi-person px-2"> </i>
@@ -128,6 +128,15 @@ const Nav = (jobData,bookData) => {
                                     <Link className="dropdown-item d-flex align-items-center" to="/studentProfile">
                                         <i className="bi bi-gear px-2"> </i>
                                         <span> Account Settings</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <hr className="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <Link className="dropdown-item d-flex align-items-center" to="/dashboard">
+                                         <i className="bi bi-speedometer2 px-2"></i>
+                                        <span>Dashboard</span>
                                     </Link>
                                 </li>
                                 <li>

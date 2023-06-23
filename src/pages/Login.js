@@ -41,13 +41,21 @@ const Login = () => {
                     <h2 className="text-center pt-3">Login</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group mb-3 pt-2">
-                            <input type="text" className="form-control shadow-none" placeholder="Email" />
+                            <input 
+                                type="text" 
+                                className="form-control shadow-none" 
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                             />
                         </div>
                         <div className="input-group mb-3 pt-2">
                             <input
                                 type="password"
                                 className="form-control shadow-none"
                                 placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
                         <div className="row mb-4 pt-2">

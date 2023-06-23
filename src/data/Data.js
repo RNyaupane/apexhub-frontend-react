@@ -94,21 +94,21 @@ export const bookData = [
     {
         id : 6,
         bookcategory:"Notes",
-        bookimageurl:bookPhoto,
+        bookimageurl:"https://picsum.photos/500",
         bookname:"DSA",
         price:"$5000",
     },
     {
         id : 7,
         bookcategory:"Solution",
-        bookimageurl:bookPhoto,
+        bookimageurl:"https://picsum.photos/600",
         bookname:"Advance JAVA",
         price:"$500",
     },
     {
         id : 8,
         bookcategory:"Book",
-        bookimageurl:bookPhoto,
+        bookimageurl:"https://picsum.photos/700",
         bookname:"C programming",
         price:"$400",
     },
@@ -141,3 +141,33 @@ export const bookData = [
         price:"$5000",
     },
 ];
+export const AcsTableData = [
+    {  
+        id:1,
+        companyName:"Apple co.",
+        jobTitle:"Java Developer",
+        appliedBy:"4",
+        status:"pending"
+    },
+    {  
+        id:2,
+        companyName:"F1 soft",
+        jobTitle:"Python Developer",
+        appliedBy:"9",
+        status:"expired",
+    },
+    {  
+        id:3,
+        companyName:"Leafrog co.",
+        jobTitle:"Html Developer",
+        appliedBy:"4",
+        status:"pending",
+    },
+    {  
+        id:4,
+        companyName:"Microsoft",
+        jobTitle:".Net Developer",
+        appliedBy:"4",
+        status:"pending",
+    }
+]

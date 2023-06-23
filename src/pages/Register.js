@@ -17,37 +17,53 @@ const Register = () => {
 
     const domain = "http://127.0.0.1:8000/api/auth/jwt/create";
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const userData = { userType, email, password, confirmPassword };
-        try {
-            const response = await axios.post("http://127.0.0.1:8000/api/auth/users/", userData);
-            console.log(response.data);
-            // Handle success response
-        } catch (error) {
-            if (error.response) {
-                console.log(error);
-            } else if (error.request) {
-                console.log(error);
-            } else if (error.message) {
-                console.log("hello");
-            }
-        }
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     console.log(userType);
+    //     const userData = { userType, email, password, confirmPassword };
+    //     try {
+    //         const response = await axios.post("http://127.0.0.1:8000/api/auth/users/", userData);
+    //         console.log(response.data);
+    //         // Handle success response
+    //     } catch (error) {
+    //         if (error.response) {
+    //             console.log(error);
+    //         } else if (error.request) {
+    //             console.log(error);
+    //         } else if (error.message) {
+    //             console.log("hello");
+    //         }
+    //     }
+    // }
+    function handleSubmit(){
+        console.log({userType,name,email,password});
+        let data = {userType,email,password}
+
+        fetch("http://127.0.0.1:8000/api/auth/users/",{
+            method:'POST',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(data)
+        }).then((result) => {
+            console.log(result);
+        })
     }
     return (
         <div className="container pt-5">
             <div className="row mt-5 mx-2 pt-3 d-flex justify-content-center align-items-center">
                 <div className="col-auto col-lg-5 bg-white m-auto rounded wrapper shadow-lg bg-opacity-25">
                     <h2 className="text-center pt-3">Registation Form</h2>
-                    <form onSubmit={handleSubmit}>
+                    <form >
                         <div className="input-group mb-3 pt-2">
                             <span className="input-group-text">
                                 <i className="fa fa-caret-down"></i>
                             </span>
-                            <select className="form-select shadow-none " value={userType} onChange={(e) => setUserType(e.target.value)} required>
-                                <option className='select-optionnn'>Select User</option>
-                                <option value="1">Student</option>
-                                <option value="2">Corporation</option>
+                            <select className="form-select shadow-none " value={userType} onChange={(e) => setUserType(e.target.value)}>
+                                <option className='select-option'>Select User</option>
+                                <option value="student" >Student</option>
+                                <option value="corporation">Corporation</option>
                             </select>
                         </div>
                         <div className="input-group mb-3 pt-2">

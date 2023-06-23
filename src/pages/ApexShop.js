@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import BookCard from '../components/BookCard';
 import Nav from '../common/Nav';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -11,12 +10,12 @@ import '../styles/style.css'
 import { bookData } from '../data/Data';
 
 const ApexShop = () => {
-  const[bookDataItem,setBookDataItem] = useState(bookData)
+  const [bookDataItem, setBookDataItem] = useState(bookData)
   // useEffect(()=>{
   //   let result = axios.get("http://localhost:8000/api/ashop/categorys/");
   //   setBookData(result)
   // },[])
-  
+
   const filterBookDataItem = (bookcategory) => {
     const filteredBookDataItems = bookData.filter((currentElement) => {
       return currentElement.bookcategory === bookcategory;
@@ -25,7 +24,7 @@ const ApexShop = () => {
   }
   return (
     <>
-      <Nav bookData={bookData}/>
+      <Nav bookData={bookData} />
       <main id="main" className="main">
         <section className="section dashboard mt-4 bg-white">
           <div className="row m-0 p-0">
@@ -48,9 +47,30 @@ const ApexShop = () => {
                 <li><button className="dropdown-item fs-5 py-0" type="button" onClick={() => filterBookDataItem("Other Material")}>Other Material</button></li>
               </ul>
             </div>
+
+            {/* Book Card */}
             <div className="col-lg-12">
               <div className="row px-3 ">
-                <BookCard bookData={bookData} />
+                {bookDataItem.map((props) => {
+                  const { id, bookcategory, bookimageurl, bookname, price } = props;
+                  return (
+                    <div className=" d-flex flex-row col-lg-5 col-md-5 border card dark m-1 rounded-0 productCard" key={id}>
+                      <img src={bookimageurl} className="card-img-top  rounded-0 imagess"
+                        alt="..." />
+                      <div className="card-body shadow-none ">
+                        <div className="text-section ">
+                          <a className="h4 text-decoration-none product-category">{bookname}</a>
+                          <p className="card-text m-0 fs-6 text-dark fs-5"><span className="fs-5"></span>{bookcategory}</p>
+                          <p className="card-text position-absolute bottom-0 posted-time pb-3 ">(28 min ago)</p>
+                        </div>
+                        <div className="cta-section">
+                          <div className=" fw-bold fs-5 pt-2" style={{ color: '#000000' }}>{price}</div>
+                          <Link to="/productDetail" className="btn btn-success my-2 border-none px-4 "> View </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>

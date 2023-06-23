@@ -16,10 +16,10 @@ const AddBooksForm = () => {
         productData = JSON.stringify(productData);
 
         console.log(productData);
-        // axios
-        // .post('http://127.0.0.1:8000/api/ashop/products/', productData)
-        // .then(response => console.log(response))
-        // .catch(err => console.log(err))
+        axios
+        .post('http://127.0.0.1:8000/api/ashop/products/', productData)
+        .then(response => console.log(response))
+        .catch(err => console.log(err))
     }
    
     const options = ['All', 'Book', 'Notes', 'Solution', 'Other Material'];
