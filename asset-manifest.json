@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4daa1771.css",
-    "main.js": "/static/js/main.3a13f29b.js",
-    "static/media/apexCollegeBuildingPhoto.png": "/static/media/apexCollegeBuildingPhoto.7d4c35cd6ea9f45f44b7.png",
-    "static/media/spacex.webp": "/static/media/spacex.a82508445c999982849a.webp",
-    "static/media/kaps.jpg": "/static/media/kaps.c89688de7ce8b3a9ea8a.jpg",
-    "static/media/baby.jpg": "/static/media/baby.c9f0b1a3fe38e61f5cce.jpg",
-    "static/media/profile-img.jpg": "/static/media/profile-img.acaaf48760121abe1272.jpg",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
-    "static/media/book3.jpg": "/static/media/book3.87858cf217b7f6cc4d85.jpg",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
-    "static/media/me.jpg": "/static/media/me.6609a385a97035dbdb0b.jpg",
-    "static/media/AH logo.png": "/static/media/AH logo.34b63f99d275d7eac6c0.png",
-    "static/media/apple-logo.png": "/static/media/apple-logo.9a20bc40fc02dac0bfa8.png",
-    "index.html": "/index.html",
-    "main.4daa1771.css.map": "/static/css/main.4daa1771.css.map",
-    "main.3a13f29b.js.map": "/static/js/main.3a13f29b.js.map"
+    "main.css": "/apexhub-frontend-react/static/css/main.8ecfb0c4.css",
+    "main.js": "/apexhub-frontend-react/static/js/main.eee5c759.js",
+    "static/media/apexCollegeBuildingPhoto.png": "/apexhub-frontend-react/static/media/apexCollegeBuildingPhoto.7d4c35cd6ea9f45f44b7.png",
+    "static/media/spacex.webp": "/apexhub-frontend-react/static/media/spacex.a82508445c999982849a.webp",
+    "static/media/kaps.jpg": "/apexhub-frontend-react/static/media/kaps.c89688de7ce8b3a9ea8a.jpg",
+    "static/media/baby.jpg": "/apexhub-frontend-react/static/media/baby.c9f0b1a3fe38e61f5cce.jpg",
+    "static/media/profile-img.jpg": "/apexhub-frontend-react/static/media/profile-img.acaaf48760121abe1272.jpg",
+    "static/media/bootstrap-icons.woff?": "/apexhub-frontend-react/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/book3.jpg": "/apexhub-frontend-react/static/media/book3.87858cf217b7f6cc4d85.jpg",
+    "static/media/bootstrap-icons.woff2?": "/apexhub-frontend-react/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/me.jpg": "/apexhub-frontend-react/static/media/me.6609a385a97035dbdb0b.jpg",
+    "static/media/AH logo.png": "/apexhub-frontend-react/static/media/AH logo.34b63f99d275d7eac6c0.png",
+    "static/media/apple-logo.png": "/apexhub-frontend-react/static/media/apple-logo.9a20bc40fc02dac0bfa8.png",
+    "index.html": "/apexhub-frontend-react/index.html",
+    "main.8ecfb0c4.css.map": "/apexhub-frontend-react/static/css/main.8ecfb0c4.css.map",
+    "main.eee5c759.js.map": "/apexhub-frontend-react/static/js/main.eee5c759.js.map"
   },
   "entrypoints": [
-    "static/css/main.4daa1771.css",
-    "static/js/main.3a13f29b.js"
+    "static/css/main.8ecfb0c4.css",
+    "static/js/main.eee5c759.js"
   ]
 }
