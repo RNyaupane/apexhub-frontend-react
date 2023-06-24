@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 const Register = () => {
-    const [userType, setUserType] = useState("");
+    const [user_type, setUserType] = useState("");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -36,8 +36,8 @@ const Register = () => {
     //     }
     // }
     function handleSubmit(){
-        console.log({userType,name,email,password});
-        let data = {userType,email,password}
+        console.log({user_type,email,password});
+        let data = {user_type,email,password}
 
         fetch("http://127.0.0.1:8000/api/auth/users/",{
             method:'POST',
@@ -60,7 +60,7 @@ const Register = () => {
                             <span className="input-group-text">
                                 <i className="fa fa-caret-down"></i>
                             </span>
-                            <select className="form-select shadow-none " value={userType} onChange={(e) => setUserType(e.target.value)}>
+                            <select className="form-select shadow-none " value={user_type} onChange={(e) => setUserType(e.target.value)}>
                                 <option className='select-option'>Select User</option>
                                 <option value="student" >Student</option>
                                 <option value="corporation">Corporation</option>

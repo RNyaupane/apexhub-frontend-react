@@ -172,9 +172,9 @@
   border: 0;
 }
 
-.dashboard .top-selling .table tbody td {
+/* .dashboard .top-selling .table tbody td {
   vertical-align: middle;
-}
+} */
 
 .dashboard .top-selling img {
   border-radius: 5px;
@@ -189,5 +189,11 @@ table a {
 .collapse1 {
   overflow-y: scroll;
   overflow-x: scroll;
-  height: 500px;
+  max-height: 500px;
+}
+.action-delete{
+  cursor: pointer;
+}
+.action-delete:hover{
+  color: #00b2e8;
 }
