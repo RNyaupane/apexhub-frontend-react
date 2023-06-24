@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Nav from '../../../common/Nav'
-import './adminDashboard.css'
+import '../adminDashboard/adminDashboard.css'
 import baby from '../../../assets/images/book3.jpg'
 
 
@@ -68,7 +68,7 @@ const AcsDashboard = () => {
                                         </div>
                                         <div className="card-body shadow-none my-4">
                                             {/* <h5 className="card-title">Jobs <span>| Today</span></h5> */}
-                                            <h5 className="card-title fs-2">Posts</h5>
+                                            <h5 className="card-title fs-2">Pending</h5>
                                             <div className="d-flex align-items-center">
                                                 <div className="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                                     <i className="bi bi-file-post"></i>
@@ -99,7 +99,7 @@ const AcsDashboard = () => {
                                         </div>
                                         <div className="card-body shadow-none my-4">
                                             {/* <h5 className="card-title">Jobs <span>| Today</span></h5> */}
-                                            <h5 className="card-title fs-2">Users</h5>
+                                            <h5 className="card-title fs-2">Declined</h5>
                                             <div className="d-flex align-items-center">
                                                 <div className="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                                     <i className="bi bi-people"></i>
@@ -112,9 +112,6 @@ const AcsDashboard = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- End Customers Card --> */}
-
-                                {/* Recent Sales */}
                                
 
                                 {/* Top Selling  */}
@@ -134,63 +131,60 @@ const AcsDashboard = () => {
                                         </div>
                                         <div className="card-body pb-0 shadow-none collapse1">
                                             <table className="table table-borderless ">
-                                                <thead className='table-light'>
+                                                <thead className='table-light border-bottom'>
                                                     <tr>
-                                                        <th scope="col">Id</th>
-                                                        <th scope="col">Company Name</th>
-                                                        <th scope='col'>Job Title</th>
-                                                        <th scope="col">Posted Date</th>
-                                                        <th scope="col">Applied By</th>
-                                                        <th scope="col">Action</th>
+                                                        <th scope="col"> Id </th>
+                                                        <th scope="col"> Company&nbsp;Name </th>
+                                                        <th scope='col'> Job&nbsp;Title </th>
+                                                        <th scope="col"> Posted&nbsp;Date </th>
+                                                        <th scope="col"> Applied&nbsp;By </th>
+                                                        <th scope="col"> Action </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#01</a></th>
+                                                        <td scope="row"><a href="#">#01</a></td>
                                                         <td><a href="#" className="text-dark ">Leafrog Co.</a></td>
                                                         <td>Java Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>32</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#02</a></th>
+                                                        <td scope="row"><a href="#">#02</a></td>
                                                         <td><a href="#" className="text-dark ">Microsoft Corporation</a></td>
                                                         <td>.Net Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>10</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#03</a></th>
+                                                        <td scope="row"><a href="#">#03</a></td>
                                                         <td><a href="#" className="text-dark ">Delloite Consulting</a></td>
                                                         <td>Business Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>22</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
@@ -203,7 +197,6 @@ const AcsDashboard = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* End Left side columns  */}
                     </div>
                 </section >
             </main >

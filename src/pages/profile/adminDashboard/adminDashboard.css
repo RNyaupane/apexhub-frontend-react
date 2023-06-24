@@ -194,6 +194,3 @@ table a {
 .action-delete{
   cursor: pointer;
 }
-.action-delete:hover{
-  color: #00b2e8;
-}

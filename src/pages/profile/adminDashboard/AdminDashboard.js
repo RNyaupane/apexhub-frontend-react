@@ -22,7 +22,7 @@ const AdminDashboard = () => {
                         <div className="col-lg-auto">
                             <div className="row w-100">
                                 {/* <!-- Sales Card --> */}
-                                <div className="col-xxl-4 col-md-5 rounded-0">
+                                <div className="col-xxl-4 col-md-6 rounded-0">
                                     <div className="card info-card sales-card border border-none shadow-none rounded-0">
                                         <div className="filter">
                                             <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
@@ -53,8 +53,8 @@ const AdminDashboard = () => {
                                 {/* <!-- End Sales Card --> */}
 
                                 {/* <!-- Revenue Card --> */}
-                                <div className="col-xxl-4 col-md-5">
-                                    <div className="card info-card revenue-card border border-none shadow-none">
+                                <div className="col-xxl-4 col-md-6">
+                                    <div className="card info-card revenue-card border border-none shadow-none rounded-0">
                                         <div className="filter">
                                             <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
                                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -84,8 +84,8 @@ const AdminDashboard = () => {
                                 {/* <!-- End Revenue Card --> */}
 
                                 {/* <!-- Customers Card --> */}
-                                <div className="col-xxl-4 col-md-5 ">
-                                    <div className="card info-card customers-card border border-none shadow-none ">
+                                <div className="col-xxl-4 col-md-6">
+                                    <div className="card info-card customers-card border border-none shadow-none rounded-0">
                                         <div className="filter">
                                             <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
                                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -133,18 +133,18 @@ const AdminDashboard = () => {
                                             <table className="table table-borderless datatable ">
                                                 <thead className='table-light'>
                                                     <tr className='border-bottom'>
-                                                        <th scope="col">Id</th>
-                                                        <th scope="col">Username</th>
-                                                        <th scope="col">Date Created</th>
-                                                        <th scope="col">Role</th>
-                                                        <th scope="col">Status</th>
-                                                        <th scope="col">Action</th>
+                                                        <th scope="col"> Id </th>
+                                                        <th scope="col"> Username </th>
+                                                        <th scope="col"> Date&nbsp;Created </th>
+                                                        <th scope="col"> Role </th>
+                                                        <th scope="col"> Status </th>
+                                                        <th scope="col"> Action </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr className='border '>
-                                                        <th scope="row"><a href="#">#01</a></th>
-                                                        <td>roshan34</td>
+                                                    <tr>
+                                                        <td scope="row"><a href="#">#01</a></td>
+                                                        <td><a href="#">roshan34</a></td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>admin</td>
                                                         <td><span className="badge bg-success rounded-4 ">active</span></td>
@@ -152,8 +152,8 @@ const AdminDashboard = () => {
                                                             <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
                                                         </td>
                                                     </tr>
-                                                    <tr className='border '>
-                                                        <th scope="row"><a href="#">#02</a></th>
+                                                    <tr>
+                                                        <td scope="row"><a href="#">#02</a></td>
                                                         <td>bhawana999</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>student</td>
@@ -162,8 +162,8 @@ const AdminDashboard = () => {
                                                             <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
                                                         </td>
                                                     </tr>
-                                                    <tr className='border '>
-                                                        <th scope="row"><a href="#">#03</a></th>
+                                                    <tr>
+                                                        <td scope="row"><a href="#">#03</a></td>
                                                         <td>kapil09</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>acs</td>
@@ -172,15 +172,15 @@ const AdminDashboard = () => {
                                                             <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
                                                         </td>
                                                     </tr>
-                                                    <tr className='border '>
-                                                        <th scope="row"><a href="#">#04</a></th>
+                                                    <tr>
+                                                        <td scope="row"><a href="#">#04</a></td>
                                                         <td>bhawana999</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>external</td>
                                                         <td><span className="badge bg-danger rounded-4 ">offline</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
                                                             <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
-                                                        </td>
+                                                        </td>   
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -205,63 +205,60 @@ const AdminDashboard = () => {
                                         </div>
                                         <div className="card-body pb-0 shadow-none collapse1">
                                             <table className="table table-borderless ">
-                                                <thead className='table-light'>
+                                                <thead className='table-light border-bottom'>
                                                     <tr>
-                                                        <th scope="col">Id</th>
-                                                        <th scope="col">Company Name</th>
-                                                        <th scope='col'>Job Title</th>
-                                                        <th scope="col">Posted Date</th>
-                                                        <th scope="col">Applied By</th>
-                                                        <th scope="col">Action</th>
+                                                        <th scope="col"> Id </th>
+                                                        <th scope="col"> Company&nbsp;Name </th>
+                                                        <th scope='col'> Job&nbsp;Title </th>
+                                                        <th scope="col"> Posted&nbsp;Date </th>
+                                                        <th scope="col"> Applied&nbsp;By </th>
+                                                        <th scope="col"> Action </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#01</a></th>
+                                                        <td scope="row"><a href="#">#01</a></td>
                                                         <td><a href="#" className="text-dark ">Leafrog Co.</a></td>
                                                         <td>Java Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>32</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#02</a></th>
+                                                        <td scope="row"><a href="#">#02</a></td>
                                                         <td><a href="#" className="text-dark ">Microsoft Corporation</a></td>
                                                         <td>.Net Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>10</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#03</a></th>
+                                                        <td scope="row"><a href="#">#03</a></td>
                                                         <td><a href="#" className="text-dark ">Delloite Consulting</a></td>
                                                         <td>Business Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>22</td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div class="form-check form-switch mx-2 fs-5">
+                                                            <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
                                                                     type="checkbox"
                                                                     role="switch"
-                                                                    id="flexSwitchCheckDefault"
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
@@ -289,55 +286,79 @@ const AdminDashboard = () => {
                                         </div>
                                         <div className="card-body  shadow-none collapse1">
                                             <table className="table table-borderless datatable">
-                                                <thead className='table-light '>
+                                                <thead className='table-light border-bottom'>
                                                     <tr>
-                                                        <th scope="col">Id</th>
-                                                        <th scope="col">Book Type</th>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Posted Date</th>
-                                                        <th scope="col">Status</th>
-                                                        <th scope="col">Action</th>
+                                                        <th scope="col"> Id </th>
+                                                        <th scope="col"> Book&nbsp;Type </th>
+                                                        <th scope="col"> Book&nbsp;Name</th>
+                                                        <th scope="col"> Posted&nbsp;Date </th>
+                                                        <th scope="col"> Status </th>
+                                                        <th scope="col"> Action </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#101</a></th>
+                                                        <td scope="row"><a href="#">#101</a></td>
                                                         <td>Notes</td>
                                                         <td><a href="#" className="text-dark">Digital System</a></td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><span className="badge bg-success">Approved</span></td>
+                                                        <td><span className="badge bg-danger rounded-4">sold</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#101</a></th>
+                                                        <td scope="row"><a href="#">#101</a></td>
                                                         <td>Notes</td>
                                                         <td><a href="#" className="text-dark">Digital System</a></td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><span className="badge bg-success">Approved</span></td>
+                                                        <td><span className="badge bg-success rounded-4 ">available</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#101</a></th>
+                                                        <td scope="row"><a href="#">#101</a></td>
                                                         <td>Notes</td>
                                                         <td><a href="#" className="text-dark">Digital System</a></td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><span className="badge bg-success">Approved</span></td>
+                                                        <td><span className="badge bg-danger rounded-4 ">sold</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><a href="#">#101</a></th>
+                                                        <td scope="row"><a href="#">#101</a></td>
                                                         <td>Notes</td>
                                                         <td><a href="#" className="text-dark">Digital System</a></td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><span className="badge bg-success">Approved</span></td>
+                                                        <td><span className="badge bg-success rounded-4 ">available</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
                                                     </tr>
 

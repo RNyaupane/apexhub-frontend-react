@@ -14,12 +14,6 @@ import profileImage from '../assets/images/profile-img.jpg'
 
 const Nav = (jobData,bookData) => {
 
-    const[search,setSearch] = useState(jobData,bookData)
-
-    const handleSearch = (event) =>{
-        event.preventDefault();
-    }
-
     const handleToggleSidebar = () => {
         document.body.classList.toggle('toggle-sidebar');
     };
@@ -44,7 +38,7 @@ const Nav = (jobData,bookData) => {
 
                 <div className="search-bar d-none d-sm-block d-md-block d-lg-block">
                     <form className="search-form d-flex align-items-center" method="POST" action="#">
-                        <input className='rounded-pill px-3' type="text" name="query" placeholder="Search here..." title="Enter search keyword" onChange={(e)=> handleSearch(e.target.value)} />
+                        <input className='rounded-pill px-3' type="text" name="query" placeholder="Search here..." title="Enter search keyword" />
                         <button type="submit" title="Search">
                             <i className="bi bi-search text-dark"></i>
                         </button>
