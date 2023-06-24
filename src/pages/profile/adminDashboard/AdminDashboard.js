@@ -121,7 +121,7 @@ const AdminDashboard = () => {
                                                 <li><a className="dropdown-item" href="#">This Year</a></li>
                                             </ul>
                                         </div>
-                                        <div className="card-body  shadow-none">
+                                        <div className="card-body  shadow-none collapse1">
                                             <table className="table table-borderless datatable ">
                                                 <thead className='table-light'>
                                                     <tr className='border-bottom'>
@@ -177,7 +177,7 @@ const AdminDashboard = () => {
 
                                 {/* Top Selling  */}
                                 <div className="col-12">
-                                    <div className="card top-selling overflow-auto mw-100 rounded-0">
+                                    <div className="card top-selling overflow-auto mw-100 rounded-0 ">
                                     <h1 className="card-title fs-3 text-center">Jobs</h1>
                                         <div className="filter">
                                             <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
@@ -190,8 +190,8 @@ const AdminDashboard = () => {
                                                 <li><a className="dropdown-item" href="#">This Year</a></li>
                                             </ul>
                                         </div>
-                                        <div className="card-body pb-0 shadow-none">
-                                            <table className="table table-borderless">
+                                        <div className="card-body pb-0 shadow-none collapse1">
+                                            <table className="table table-borderless ">
                                                 <thead className='table-light'>
                                                     <tr>
                                                         <th scope="col">Id</th>
@@ -204,39 +204,75 @@ const AdminDashboard = () => {
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row"><a href="#">#2644</a></th>
-                                                        <td><a href="#" className="text-dark fw-bold">Ut inventore ipsa voluptas nulla</a></td>
+                                                        <td><a href="#" className="text-dark ">Ut inventore ipsa voluptas nulla</a></td>
                                                         <td>$64</td>
                                                         <td className="fw-bold">124</td>
                                                         <td>$5,828</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"><a href="#">#2644</a></th>
-                                                        <td><a href="#" className="text-dark fw-bold">Exercitationem similique doloremque</a></td>
+                                                        <td><a href="#" className="text-dark ">Exercitationem similique doloremque</a></td>
                                                         <td>$46</td>
                                                         <td className="fw-bold">98</td>
                                                         <td>$4,508</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"><a href="#">#2644</a></th>
-                                                        <td><a href="#" className="text-dark fw-bold">Doloribus nisi exercitationem</a></td>
+                                                        <td><a href="#" className="text-dark ">Doloribus nisi exercitationem</a></td>
                                                         <td>$59</td>
                                                         <td className="fw-bold">74</td>
                                                         <td>$4,366</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"><a href="#">#2644</a></th>
-                                                        <td><a href="#" className="text-dark fw-bold">Officiis quaerat sint rerum error</a></td>
+                                                        <td><a href="#" className="text-dark ">Officiis quaerat sint rerum error</a></td>
                                                         <td>$32</td>
                                                         <td className="fw-bold">63</td>
                                                         <td>$2,016</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"><a href="#">#2644</a></th>
-                                                        <td><a href="#" className="text-dark fw-bold">Sit unde debitis delectus repellendus</a></td>
+                                                        <td><a href="#" className="text-dark ">Sit unde debitis delectus repellendus</a></td>
                                                         <td>$79</td>
                                                         <td className="fw-bold">41</td>
                                                         <td>$3,239</td>
                                                     </tr>
+                                                    <tr>
+                                                        <th scope="row"><a href="#">#2644</a></th>
+                                                        <td><a href="#" className="text-dark ">Ut inventore ipsa voluptas nulla</a></td>
+                                                        <td>$64</td>
+                                                        <td className="fw-bold">124</td>
+                                                        <td>$5,828</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><a href="#">#2644</a></th>
+                                                        <td><a href="#" className="text-dark ">Exercitationem similique doloremque</a></td>
+                                                        <td>$46</td>
+                                                        <td className="fw-bold">98</td>
+                                                        <td>$4,508</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><a href="#">#2644</a></th>
+                                                        <td><a href="#" className="text-dark ">Doloribus nisi exercitationem</a></td>
+                                                        <td>$59</td>
+                                                        <td className="fw-bold">74</td>
+                                                        <td>$4,366</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><a href="#">#2644</a></th>
+                                                        <td><a href="#" className="text-dark ">Officiis quaerat sint rerum error</a></td>
+                                                        <td>$32</td>
+                                                        <td className="fw-bold">63</td>
+                                                        <td>$2,016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><a href="#">#2644</a></th>
+                                                        <td><a href="#" className="text-dark ">Sit unde debitis delectus repellendus</a></td>
+                                                        <td>$79</td>
+                                                        <td className="fw-bold">41</td>
+                                                        <td>$3,239</td>
+                                                    </tr>
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>
@@ -257,7 +293,7 @@ const AdminDashboard = () => {
                                                 <li><a className="dropdown-item" href="#">This Year</a></li>
                                             </ul>
                                         </div>
-                                        <div className="card-body  shadow-none">
+                                        <div className="card-body  shadow-none collapse1">
                                             <table className="table table-borderless datatable">
                                                 <thead className='table-light'>
                                                     <tr>

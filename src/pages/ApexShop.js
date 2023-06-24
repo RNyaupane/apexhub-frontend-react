@@ -29,7 +29,7 @@ const ApexShop = () => {
         <section className="section dashboard mt-4 bg-white">
           <div className="row m-0 p-0">
             <div className=" my-2 py-3 px-4 ">
-              <Link to={'/addBooksForm'} type="button" className="btn btn-success mx-0 px-4 py-2  rounded-0 rounded-end fw-bold ">
+              <Link to={'/addBooksForm'} type="button" className="btn btn-success mx-0 px-5 py-2  rounded-0 rounded-end fw-bold ">
                 <i className="bi bi-plus-circle-fill"></i> Add<span className='d-none d-sm-inline d-md-inline d-lg-inline'> Item</span>
               </Link>
               <button className="btn btn-gray border dropdown-toggle rounded-0 bg-white py-2 px-4 mx-3 fw-3 fs-5 float-end me-0" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
