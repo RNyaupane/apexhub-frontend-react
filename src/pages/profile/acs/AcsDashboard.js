@@ -147,7 +147,7 @@ const AcsDashboard = () => {
                                                         <td><a href="#" className="text-dark ">Leafrog Co.</a></td>
                                                         <td>Java Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td>32</td>
+                                                        <td><a href="#" className="text-dark ">5</a></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
                                                             <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
@@ -163,7 +163,7 @@ const AcsDashboard = () => {
                                                         <td><a href="#" className="text-dark ">Microsoft Corporation</a></td>
                                                         <td>.Net Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td>10</td>
+                                                        <td><a href="#" className="text-dark ">3</a></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
                                                             <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"
@@ -179,7 +179,7 @@ const AcsDashboard = () => {
                                                         <td><a href="#" className="text-dark ">Delloite Consulting</a></td>
                                                         <td>Business Developer</td>
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td>22</td>
+                                                        <td><a href="#" className="text-dark ">8</a></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
                                                             <div className="form-check form-switch mx-2 fs-5">
                                                                 <input className="form-check-input shadow-none"

@@ -98,7 +98,7 @@ const ExternalDashboard = () => {
                                         </div>
                                         <div className="card-body shadow-none my-4">
                                             {/* <h5 className="card-title">Jobs <span>| Today</span></h5> */}
-                                            <h5 className="card-title fs-2">Users</h5>
+                                            <h5 className="card-title fs-2">Views</h5>
                                             <div className="d-flex align-items-center">
                                                 <div className="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                                     <i className="bi bi-people"></i>
@@ -116,7 +116,7 @@ const ExternalDashboard = () => {
                                 {/* Top Selling  */}
                                 <div className="col-12">
                                     <div className="card top-selling overflow-auto mw-100 rounded-0 ">
-                                        <h1 className="card-title fs-3 text-center">Jobs</h1>
+                                        <h1 className="card-title fs-3 text-center">Posted Jobs</h1>
                                         <div className="filter">
                                             <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots"></i></a>
                                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">

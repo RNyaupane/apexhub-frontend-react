@@ -1,5 +1,4 @@
 import React from 'react'
-import { AcsTableData } from '../../../data/Data';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import { Link } from 'react-router-dom';
@@ -107,34 +106,6 @@ const AcsProfile = () => {
                             <button type="submit" className="btn btn-success mb-3">Change Password</button>
                         </div>
                     </form>
-                </Tab>
-                <Tab eventKey="yourPosts" title="Dashboard">
-                    <table className="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Company</th>
-                                <th scope="col">Job Title</th>
-                                {/* <th scope="col">Application</th> */}
-                                <th scope="col">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {AcsTableData.map((props) => {
-                                return (
-                                    <tr key={props.id}>
-                                        <th scope="row">{props.id}</th>
-                                        <td>{props.companyName}</td>
-                                        <td>{props.jobTitle}</td>
-                                        {/* <td>{props.appliedBy}</td> */}
-                                        <td>
-                                            <span className="badge rounded-pill bg-secondary">{props.status}</span>
-                                        </td>
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
-                    </table>
                 </Tab>
             </Tabs>
         </>

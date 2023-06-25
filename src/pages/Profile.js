@@ -26,14 +26,14 @@ const StudentProfile = () => {
                 </div>
                 <div className="d-grid gap-2 d-md-block my-4">
                   <button className="btn btn-success border border-2 mx-2" type="button ">Update Photo</button>
-                  {/* <button className="btn btn-light border border-dark " type="button">Remove Photo</button> */}
+                  <button className="btn btn-light border border-dark " type="button">Dashboard</button>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="col-xl-8 border border-1 rounded-1 sm p-3">
-            <ProfileAcs />
+            <ProfileStudent />
           </div>
         </div>
       </section>
