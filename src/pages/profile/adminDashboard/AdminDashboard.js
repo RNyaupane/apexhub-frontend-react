@@ -158,7 +158,7 @@ const AdminDashboard = () => {
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
-                                                            
+
                                                         </td>
                                                         <td scope='row' className=''>
                                                             <Link type="button" className="btn btn-light border py-0 rounded-5">view</Link>
@@ -179,7 +179,7 @@ const AdminDashboard = () => {
                                                                 />
                                                             </div>
                                                         </td>
-                                                        
+
                                                     </tr>
                                                     <tr>
                                                         <td scope="row"><a href="#">#03</a></td>
@@ -196,7 +196,7 @@ const AdminDashboard = () => {
                                                                 />
                                                             </div>
                                                         </td>
-                                                        
+
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -248,39 +248,61 @@ const AdminDashboard = () => {
                                                                 />
                                                             </div>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td scope="row"><a href="#">#02</a></td>
-                                                        <td><a href="#" className="text-dark ">Microsoft Corporation</a></td>
-                                                        <td>.Net Developer</td>
-                                                        <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><a href="#" className="text-dark ">6</a></td>
-                                                        <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div className="form-check form-switch mx-2 fs-5">
-                                                                <input className="form-check-input shadow-none"
-                                                                    type="checkbox"
-                                                                    role="switch"
-                                                                    defaultChecked="checked"
-                                                                />
-                                                            </div>
+                                                        <td scope='row' className=''>
+                                                            <Link type="button" className="btn btn-light border py-0 rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal">view</Link>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td scope="row"><a href="#">#03</a></td>
-                                                        <td><a href="#" className="text-dark ">Delloite Consulting</a></td>
-                                                        <td>Business Developer</td>
-                                                        <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td><a href="#" className="text-dark ">3</a></td>
-                                                        <td className=' action-delete text-danger m-0 p-0'>
-                                                            <div className="form-check form-switch mx-2 fs-5">
-                                                                <input className="form-check-input shadow-none"
-                                                                    type="checkbox"
-                                                                    role="switch"
-                                                                    defaultChecked="checked"
-                                                                />
+                                                    {/* Modal */}
+                                                    <div className="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div className="modal-dialog modal-dialog-scrollable modal-lg">
+                                                            <div className="modal-content rounded-0 border-white">
+                                                                <div className="modal-header">
+                                                                    <h5 className="modal-title" id="exampleModalLabel">Job Title</h5>
+                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div className="modal-body">
+                                                                    <div className="container px-2">
+                                                                        <div className="mb-2 d-flex justify-content-between align-items-center">
+                                                                            <div className="position-relative">
+                                                                                <span className="position-absolute search"><i className="fa fa-search"></i></span>
+                                                                                <input className="form-control w-100" placeholder="Search by name..." />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="table-responsive mt-5 ">
+                                                                            <table className="table table-responsive table-borderless">
+                                                                                <thead className='border-bottom'>
+                                                                                    <tr className="bg-light">
+                                                                                        <th scope="col" width="10%">S.N</th>
+                                                                                        <th scope="col" width="20%">Username</th>
+                                                                                        <th scope="col" width="20%">Applied&nbsp;Date</th>
+                                                                                        <th scope="col" width="20%">Resume</th>
+                                                                                        <th scope="col" width="30%">Email</th>
+                                                                                        <th scope="col" className="text-end" width="10%">Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>1</td>
+                                                                                        <td>@roshan123</td>
+                                                                                        <td><i className="fa fa-check-circle-o green"></i><span className="ms-1">{formattedDate.toString()}</span></td>
+                                                                                        <td><a href='https://www.africau.edu/images/default/sample.pdf' className='text-success fw-bold'>Resume<span>.pdf</span></a></td>
+                                                                                        <td>roshan@gmail.com</td>
+                                                                                        <Link type="button" className="btn bg-warning border py-0 mt-1">Profile</Link>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div className="modal-footer">
+                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" className="btn btn-primary">Save changes</button>
+                                                                </div>
                                                             </div>
-                                                        </td>
-                                                    </tr>
+                                                        </div>
+                                                    </div>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -329,6 +351,9 @@ const AdminDashboard = () => {
                                                                     defaultChecked="checked"
                                                                 />
                                                             </div>
+                                                        </td>
+                                                        <td scope='row' className=''>
+                                                            <Link type="button" className="btn btn-light border py-0 rounded-5">view</Link>
                                                         </td>
                                                     </tr>
                                                     <tr>

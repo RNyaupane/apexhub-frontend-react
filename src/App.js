@@ -1,5 +1,6 @@
 import React from 'react'
 import {  Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 import Acs from './pages/Acs.jsx';
 import ApexShop from './pages/ApexShop.js'
 import AddBooksForm from './pages/AddBooksForm';
@@ -20,6 +21,7 @@ import ResetPassword from './pages/ResetPassword';
 import 'jquery';
 
 const App = () => {
+const[user,setUser]=useState();
   return (
     <>
       
@@ -34,7 +36,7 @@ const App = () => {
         <Route path='/jobDetail' element={<JobDetail />} />
         <Route path='/jobPostForm' element={<JobPostForm />} />
         <Route path='/studentProfile' element={<StudentProfile />} />
-        <Route path='/dashboard' element={<ExternalDashboard />} />
+        <Route path='/dashboard' element={<AdminDashboard />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/forgetPassword' element={<ForgetPassword />} />

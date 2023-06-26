@@ -1,9 +1,10 @@
 import React from 'react'
 import axios from 'axios';
+import Acs from './Acs';
+import { redirect } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "../styles/login.css";
 
 
@@ -19,20 +20,19 @@ const Login = () => {
         e.preventDefault();
         const userData = { email, password };
         try {
-          const response = await axios.post(domain, userData);
-          console.log(response.data);
-          // Handle success response
-          console.log("Login successful!");
-          setAccessKey(response.data.access);
-          setRefreshKey(response.data.refresh);
-          localStorage.setItem("accessKey", response.data.access);
-          localStorage.setItem("refreshKey", response.data.refresh);
+            const response = await axios.post(domain, userData);
+            setAccessKey(response.data.access);
+            setRefreshKey(response.data.refresh);
+            console.log(response);
+            localStorage.setItem("accessKey", response.data.access);
+            localStorage.setItem("refreshKey", response.data.refresh);
         } catch (error) {
-          console.error(error);
-          // Handle error response
-          console.log("Login failed.");
+            console.error(error);
+            // Handle error response
+            console.log("Login failed.");
         }
-      };
+    };
+
     return (
         <div className="container pt-5">
             <div
@@ -41,13 +41,13 @@ const Login = () => {
                     <h2 className="text-center pt-3">Login</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group mb-3 pt-2">
-                            <input 
-                                type="text" 
-                                className="form-control shadow-none" 
+                            <input
+                                type="text"
+                                className="form-control shadow-none"
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                             />
+                            />
                         </div>
                         <div className="input-group mb-3 pt-2">
                             <input

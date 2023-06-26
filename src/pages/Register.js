@@ -19,12 +19,10 @@ const Register = () => {
 
     // const handleSubmit = async (e) => {
     //     e.preventDefault();
-    //     console.log(userType);
-    //     const userData = { userType, email, password, confirmPassword };
+    //     let userData = JSON.stringify({user_type, email, password });
     //     try {
     //         const response = await axios.post("http://127.0.0.1:8000/api/auth/users/", userData);
     //         console.log(response.data);
-    //         // Handle success response
     //     } catch (error) {
     //         if (error.response) {
     //             console.log(error);
@@ -55,7 +53,7 @@ const Register = () => {
             <div className="row mt-5 mx-2 pt-3 d-flex justify-content-center align-items-center">
                 <div className="col-auto col-lg-5 bg-white m-auto rounded wrapper shadow-lg bg-opacity-25">
                     <h2 className="text-center pt-3">Registation Form</h2>
-                    <form >
+                    <form>
                         <div className="input-group mb-3 pt-2">
                             <span className="input-group-text">
                                 <i className="fa fa-caret-down"></i>
