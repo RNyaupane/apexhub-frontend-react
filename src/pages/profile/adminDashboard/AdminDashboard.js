@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Nav from '../../../common/Nav'
 import './adminDashboard.css'
 import baby from '../../../assets/images/book3.jpg'
@@ -139,6 +140,7 @@ const AdminDashboard = () => {
                                                         <th scope="col"> Role </th>
                                                         <th scope="col"> Status </th>
                                                         <th scope="col"> Action </th>
+                                                        <th scope='col'>Details</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -148,8 +150,18 @@ const AdminDashboard = () => {
                                                         <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
                                                         <td>admin</td>
                                                         <td><span className="badge bg-success rounded-4 ">active</span></td>
-                                                        <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                        <td className=' action-delete text-danger m-0 p-0 '>
+                                                            <div className="form-check form-switch mx-2 fs-5 mt-2">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
+                                                            
+                                                        </td>
+                                                        <td scope='row' className=''>
+                                                            <Link type="button" className="btn btn-light border py-0 rounded-5">view</Link>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -159,8 +171,15 @@ const AdminDashboard = () => {
                                                         <td>student</td>
                                                         <td><span className="badge bg-danger rounded-4 ">offline</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5 mt-1">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
+                                                        
                                                     </tr>
                                                     <tr>
                                                         <td scope="row"><a href="#">#03</a></td>
@@ -169,18 +188,15 @@ const AdminDashboard = () => {
                                                         <td>acs</td>
                                                         <td><span className="badge bg-success rounded-4 ">active</span></td>
                                                         <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
+                                                            <div className="form-check form-switch mx-2 fs-5 mt-1">
+                                                                <input className="form-check-input shadow-none"
+                                                                    type="checkbox"
+                                                                    role="switch"
+                                                                    defaultChecked="checked"
+                                                                />
+                                                            </div>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td scope="row"><a href="#">#04</a></td>
-                                                        <td>sabita01</td>
-                                                        <td><a href="#" className="text-dark">{formattedDate.toString()}</a></td>
-                                                        <td>external</td>
-                                                        <td><span className="badge bg-danger rounded-4 ">offline</span></td>
-                                                        <td className=' action-delete text-danger m-0 p-0'>
-                                                            <button className='btn'><i className="bi bi-trash-fill mx-2 text-danger fs-5 rounded-5"></i></button>
-                                                        </td>   
+                                                        
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -213,6 +229,7 @@ const AdminDashboard = () => {
                                                         <th scope="col"> Posted&nbsp;Date </th>
                                                         <th scope="col"> Applied&nbsp;By </th>
                                                         <th scope="col"> Action </th>
+                                                        <th scope='col'>Details</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -294,6 +311,7 @@ const AdminDashboard = () => {
                                                         <th scope="col"> Posted&nbsp;Date </th>
                                                         <th scope="col"> Status </th>
                                                         <th scope="col"> Action </th>
+                                                        <th scope='col'>Details</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
