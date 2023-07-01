@@ -21,7 +21,6 @@ import ResetPassword from './pages/ResetPassword';
 import 'jquery';
 
 const App = () => {
-const[user,setUser]=useState();
   return (
     <>
       

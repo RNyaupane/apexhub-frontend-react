@@ -33,7 +33,7 @@ const StudentProfile = () => {
           </div>
 
           <div className="col-xl-8 border border-1 rounded-1 sm p-3">
-            <ProfileExternal />
+            <ProfileStudent />
           </div>
         </div>
       </section>
